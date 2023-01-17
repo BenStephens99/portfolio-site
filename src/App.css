@@ -1,38 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@200;400;500;800&display=swap');
+
+:root {
+  --darkestBlue: #2146b3;
+  --middleBlue: #3d77fe;
+  --lightestBlue: #c8efff;
+
+  --headerHeight: 100px;
+  --asideWidth: 175px
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-weight: 00;
+  font-family: sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
 .App {
-  text-align: center;
+  font-size: 1.2em;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.light {
+  background-color: var(--lightestBlue);
+  color: var(--middleBlue);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.dark {
   color: white;
+  background-color: black;
 }
 
-.App-link {
-  color: #61dafb;
+main {
+  position: relative;
+  top: var(--headerHeight);
+  left: var(--asideWidth);
+  width: calc(100% - var(--asideWidth));
+  height: 100%;
+  background-color: inherit;
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+main.light {
+  background-color: var(--lightestBlue);
+}
+
+.title-large {
+  font-size: 3.5em;
+}
+
+.title-large.shadow {
+  color: var(--lightestBlue);
+  text-shadow: 2px 2px 8px var(--darkestBlue);
+}
+
+.title-medium {
+  font-size: 2.5em;
+}
+
+.title-medium.shadow {
+  color: var(--lightestBlue);
+  text-shadow: 2px 2px 8px var(--darkestBlue);
+}
+
+.text p {
+  margin: 1em 0;
+}
+
+.box {
+  box-shadow: 0 0 5px var(--darkestBlue);
+}
+
+
+.box-content {
+  padding: 2em 4em;
 }

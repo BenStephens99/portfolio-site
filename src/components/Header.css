@@ -1,0 +1,19 @@
+
+header {
+    box-shadow: 0 0 5px var(--darkestBlue);
+    height: var(--headerHeight);
+    width: calc(100vw - var(--asideWidth));
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: inherit;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+  }
+
+header h3 {
+    margin-left: 3em;
+    font-size: 1.5em;
+    font-weight: 500;
+  }

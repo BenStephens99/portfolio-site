@@ -1,0 +1,38 @@
+aside {
+    box-shadow: 0 0 5px var(--darkestBlue);
+    height: 100vh;
+    width: var(--asideWidth);
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 1em;
+    z-index: 10;
+}
+
+aside nav {
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid rgb(110, 194, 222);
+}
+
+aside nav li {
+    padding: 0.5em 0;
+    border-bottom: 1px solid rgb(110, 194, 222);
+}
+
+aside nav li:hover {
+    color: var(--darkestBlue);
+    cursor: pointer;
+}
+
+aside .socials {
+    bottom: 0;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+}

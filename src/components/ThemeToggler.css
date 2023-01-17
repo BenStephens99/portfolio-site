@@ -1,0 +1,37 @@
+.theme-toggle-button {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-left: auto;
+    margin-right: 1em;
+    font-size: 1.5em;
+  }
+
+  .outer-toggle-button {
+    width: 2.5em;
+    height: 1em;
+    margin: auto 10px;
+    border-radius: 1em;
+    position: relative;
+    background-color: var(--middleBlue);
+  }
+  
+  .dark .outer-toggle-button {
+    background-color: rgb(141, 2, 2);
+  }
+  
+  .inner-toggle-button {
+    height: 100%;
+    width: 1em;
+    border-radius: 50%;
+    position: absolute;
+    transition: 0.5s ease;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 5px rgb(102, 102, 102);
+  }
+  
+  .dark .inner-toggle-button {
+    left: calc(100% - 1em);
+    background-color: white;
+  }
+  

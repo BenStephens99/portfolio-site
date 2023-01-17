@@ -1,0 +1,11 @@
+#intro {
+    position: absolute;
+    width: 70%;
+    height: 500px;
+    z-index: 9;
+    background-color: inherit;
+}
+
+#intro .text {
+    margin-top: 3em;
+}
