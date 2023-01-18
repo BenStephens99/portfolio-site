@@ -13,7 +13,7 @@ function Work() {
                 <h2 className="title-medium">Work</h2>
                 <div className="portfolio-cards">
                     <PortfolioCard
-                        title="Octopus App" image={octopusLaptop}
+                        title="Energy App" image={octopusLaptop}
                         description={
                             <>
                                 <p>A cross platform desktop application for monitoring real time energy consumption

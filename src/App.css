@@ -5,8 +5,8 @@
   --middleBlue: #8badfd;
   --lightestBlue: #c8efff;
 
-  --headerHeight: 100px;
-  --asideWidth: 150px
+  --headerHeight: 6em;
+  --asideWidth: 10em
 }
 
 * {
@@ -89,11 +89,6 @@ main.light {
 
 .box-content {
   padding: 2em 4em;
-}
-
-.large-section {
-  width: 1000px;
-  margin: auto;
 }
 
 .profile-image {

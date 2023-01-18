@@ -1,13 +1,13 @@
 #intro {
     position: absolute;
     width: 70%;
-    height: 500px;
+    height: 25em;
     z-index: 9;
     background-color: inherit;
 }
 
 #intro .box-content {
-    max-width: 450px;
+    max-width: 20em;
 }
 
 #intro .text {
