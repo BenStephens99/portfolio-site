@@ -3,6 +3,6 @@ main {
     top: 75px;
     left: 125px;
     width: calc(100% - 125px);
-    height: 100%;
+    height: auto;
     background-color: inherit;
 }

@@ -4,3 +4,47 @@
     width: 100%;
     background-color: inherit;
 }
+
+#work .title-medium {
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+#work .box-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portfolio-cards {
+    position: relative;
+    display: grid;
+    grid-template-columns: 400px 400px;
+    gap: 100px;
+    padding-bottom: 100px;
+}
+
+.portfolio-card {
+    box-shadow: 0 0 3px var(--darkestBlue);
+    position: relative;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.portfolio-card:nth-child(even) {
+    top: 100px;
+}
+
+.portfolio-card img {
+    width: 80%;
+
+}
+
+.portfolio-card h3 {
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+

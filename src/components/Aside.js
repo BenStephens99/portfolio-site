@@ -1,11 +1,12 @@
 import React from "react";
 import './Aside.css';
+import profilePic from '../images/me-grad-small.jpg'
 
 
 function Aside() {
     return (
         <aside>
-            <div>BS</div>
+            <div></div>
             <nav>
                 <li>About</li>
                 <li>Education</li>

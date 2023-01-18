@@ -1,9 +1,9 @@
 aside {
     box-shadow: 0 0 5px var(--darkestBlue);
-    height: 100vh;
+    height: calc(100vh - var(--headerHeight));
     width: var(--asideWidth);
     position: fixed;
-    top: 0;
+    top: var(--headerHeight);
     left: 0;
     background-color: inherit;
     display: flex;
@@ -11,7 +11,7 @@ aside {
     justify-content: space-around;
     text-align: center;
     font-size: 1em;
-    z-index: 10;
+    z-index:19;
 }
 
 aside nav {
@@ -26,7 +26,7 @@ aside nav li {
 }
 
 aside nav li:hover {
-    color: var(--darkestBlue);
+    color: var(--middleBlue);
     cursor: pointer;
 }
 
@@ -35,4 +35,11 @@ aside .socials {
     display: grid;
     grid-template-columns: auto auto;
     justify-content: space-evenly;
+}
+
+.profile-image {
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 1em;
 }

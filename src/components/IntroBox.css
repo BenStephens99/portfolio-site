@@ -6,6 +6,10 @@
     background-color: inherit;
 }
 
+#intro .box-content {
+    max-width: 450px;
+}
+
 #intro .text {
     margin-top: 3em;
 }

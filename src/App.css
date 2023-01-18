@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@200;400;500;800&display=swap');
 
 :root {
-  --darkestBlue: #2146b3;
-  --middleBlue: #3d77fe;
+  --darkestBlue: #3d77fe;
+  --middleBlue: #8badfd;
   --lightestBlue: #c8efff;
 
   --headerHeight: 100px;
-  --asideWidth: 175px
+  --asideWidth: 150px
 }
 
 * {
@@ -16,17 +16,29 @@
   font-family: sans-serif;
 }
 
-li {
-  list-style: none;
-}
-
 .App {
   font-size: 1.2em;
 }
 
+button {
+  padding: 1em 2em;
+  border: none;
+  background-color: var(--darkestBlue);
+  color: var(--lightestBlue);
+}
+
+button:hover {
+  background-color: var(--middleBlue);
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
 .light {
   background-color: var(--lightestBlue);
-  color: var(--middleBlue);
+  color: var(--darkestBlue);
 }
 
 .dark {
@@ -49,7 +61,7 @@ main.light {
 }
 
 .title-large {
-  font-size: 3.5em;
+  font-size: 3em;
 }
 
 .title-large.shadow {
@@ -58,7 +70,7 @@ main.light {
 }
 
 .title-medium {
-  font-size: 2.5em;
+  font-size: 2em;
 }
 
 .title-medium.shadow {
@@ -68,13 +80,22 @@ main.light {
 
 .text p {
   margin: 1em 0;
+  font-size: 0.9em;
 }
 
 .box {
-  box-shadow: 0 0 5px var(--darkestBlue);
+  box-shadow: 0 0 3px var(--darkestBlue);
 }
-
 
 .box-content {
   padding: 2em 4em;
+}
+
+.large-section {
+  width: 1000px;
+  margin: auto;
+}
+
+.profile-image {
+  border-radius: 50%;
 }

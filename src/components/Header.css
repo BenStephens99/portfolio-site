@@ -2,14 +2,14 @@
 header {
     box-shadow: 0 0 5px var(--darkestBlue);
     height: var(--headerHeight);
-    width: calc(100vw - var(--asideWidth));
+    width: calc(100vw);
     position: fixed;
     top: 0;
-    right: 0;
+    left: 0;
     background-color: inherit;
     display: flex;
     align-items: center;
-    z-index: 10;
+    z-index: 20;
   }
 
 header h3 {

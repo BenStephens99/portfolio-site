@@ -12,7 +12,7 @@
     margin: auto 10px;
     border-radius: 1em;
     position: relative;
-    background-color: var(--middleBlue);
+    background-color: var(--darkestBlue);
   }
   
   .dark .outer-toggle-button {
