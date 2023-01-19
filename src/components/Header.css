@@ -1,19 +1,39 @@
-
 header {
-    box-shadow: 0 0 5px var(--darkestBlue);
-    height: var(--headerHeight);
-    width: calc(100vw);
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: inherit;
-    display: flex;
-    align-items: center;
-    z-index: 20;
+  box-shadow: 0 0 5px var(--fontColor);
+  height: var(--headerHeight);
+  width: calc(100vw);
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: inherit;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 20;
+  animation-name: slide-header;
+  animation-duration: 900ms;  
+  animation-delay: 700ms;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes slide-header {
+  0% {
+    top: -200px;
   }
+  20% {
+    top: 50px;
+  }
+  55% {
+    top: -20px;
+  }
+  100% {
+    top: 0px;
+  }
+}
 
 header h3 {
-    margin-left: 3em;
-    font-size: 1.5em;
-    font-weight: 500;
-  }
+  margin-left: 3em;
+  font-size: 1.5em;
+  font-weight: 500;
+}

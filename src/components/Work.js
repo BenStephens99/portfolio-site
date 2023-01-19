@@ -13,26 +13,26 @@ function Work() {
                 <h2 className="title-medium">Work</h2>
                 <div className="portfolio-cards">
                     <PortfolioCard
-                        title="Energy App" image={octopusLaptop}
-                        description={
-                            <>
-                                <p>A cross platform desktop application for monitoring real time energy consumption
-                                    from an energy providers REST API.
-                                </p>
-                            </>}
-                    />
-                    <PortfolioCard title="JTreat" image={jtreat} 
-                        description={
-                            <>
-                            <p>A modern and responsive website with an integrated booking system, contact form and maps integration for a 
-                                small physio business.
+                        title="Energy App"
+                        image={octopusLaptop}
+                        description={<>
+                            <p>A cross platform desktop application for monitoring and displaying real time energy consumption
+                                from an energy providers REST API.
                             </p>
-                            </>
-                        }
+                        </>}
+                    />
+                    <PortfolioCard
+                        title="JTreat"
+                        image={jtreat}
+                        description={<>
+                            <p>A modern and responsive website with an integrated booking system, contact form and maps integration for a
+                                physiotherapy business.
+                            </p>
+                        </>}
                     />
                     <PortfolioCard title="Cyber-Assure" image={cyber} />
 
-                    <PortfolioCard title="University Works"/>
+                    <PortfolioCard title="University Works" />
                 </div>
             </div>
         </div>

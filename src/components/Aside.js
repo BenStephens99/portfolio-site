@@ -1,12 +1,15 @@
 import React from "react";
 import './Aside.css';
 import profilePic from '../images/me-grad-small.jpg'
-
+import linkedIn from '../images/linkedIn.svg'
+import email from '../images/email.svg'
+import ThemeToggler from "./ThemeToggler";
 
 function Aside() {
     return (
-        <aside>
-            <div></div>
+        <aside id="aside">
+
+            <ThemeToggler />
             <nav>
                 <li>About</li>
                 <li>Education</li>
@@ -14,8 +17,8 @@ function Aside() {
                 <li>Contact</li>
             </nav>
             <div className="socials">
-                <li>In</li>
-                <li>Em</li>
+                <img src={linkedIn} alt="LinkedIn" />
+                <img src={email} alt="Email" />
             </div>
         </aside>
     )

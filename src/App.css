@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@200;400;500;800&display=swap');
 
 :root {
-  --darkestBlue: #3d77fe;
-  --middleBlue: #8badfd;
-  --lightestBlue: #c8efff;
+  --fontColor: #514644 ;
+  --middleBlue: #7b6967 ;
+  --backgroundColor: #efc8b1;
 
-  --headerHeight: 6em;
-  --asideWidth: 10em
+  --headerHeight: 5em;
+  --asideWidth: 8em
 }
 
 * {
@@ -16,15 +16,32 @@
   font-family: sans-serif;
 }
 
+
+body {
+  background-color: var(--fontColor);
+}
+
 .App {
-  font-size: 1.2em;
+  font-size: 1.1vw;
+}
+
+
+#mySkills, #work, #intro {
+    animation-duration: 1.5s;  
+    animation-delay: 2.5s;
+    animation-fill-mode: backwards;
+}
+
+#header, #aside {
+  animation-fill-mode: backwards;
 }
 
 button {
   padding: 1em 2em;
   border: none;
-  background-color: var(--darkestBlue);
-  color: var(--lightestBlue);
+  background-color: var(--fontColor);
+  color: var(--backgroundColor);
+  font-size: 0.8em;
 }
 
 button:hover {
@@ -37,8 +54,8 @@ li {
 }
 
 .light {
-  background-color: var(--lightestBlue);
-  color: var(--darkestBlue);
+  background-color: var(--backgroundColor);
+  color: var(--fontColor);
 }
 
 .dark {
@@ -57,34 +74,33 @@ main {
 }
 
 main.light {
-  background-color: var(--lightestBlue);
+  background-color: var(--backgroundColor);
 }
 
 .title-large {
-  font-size: 3em;
+  font-size: 3.5em;
 }
 
 .title-large.shadow {
-  color: var(--lightestBlue);
-  text-shadow: 2px 2px 8px var(--darkestBlue);
+  color: var(--backgroundColor);
+  text-shadow: 2px 2px 8px var(--fontColor);
 }
 
 .title-medium {
-  font-size: 2em;
+  font-size: 2.5em;
 }
 
 .title-medium.shadow {
-  color: var(--lightestBlue);
-  text-shadow: 2px 2px 8px var(--darkestBlue);
+  color: var(--backgroundColor);
+  text-shadow: 2px 2px 8px var(--fontColor);
 }
 
 .text p {
   margin: 1em 0;
-  font-size: 0.9em;
 }
 
 .box {
-  box-shadow: 0 0 3px var(--darkestBlue);
+  box-shadow: 0 0 3px var(--fontColor);
 }
 
 .box-content {

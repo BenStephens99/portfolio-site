@@ -1,18 +1,16 @@
 .theme-toggle-button {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    margin-left: auto;
-    margin-right: 1em;
     font-size: 1.5em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   .outer-toggle-button {
-    width: 2.5em;
+    width: 50%;
     height: 1em;
-    margin: auto 10px;
     border-radius: 1em;
     position: relative;
-    background-color: var(--darkestBlue);
+    background-color: var(--fontColor);
   }
   
   .dark .outer-toggle-button {
@@ -26,7 +24,7 @@
     position: absolute;
     transition: 0.5s ease;
     left: 0;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--backgroundColor);
     box-shadow: 0 0 5px rgb(102, 102, 102);
   }
   

@@ -1,13 +1,20 @@
 #intro {
     position: absolute;
+    display: flex;
     width: 70%;
     height: 25em;
     z-index: 9;
     background-color: inherit;
-}
+    animation-name: slide-intro;
+  }
+  
+  @keyframes slide-intro {
+    from {left: -80%;}
+    to {left: 0;}
+  }
 
 #intro .box-content {
-    max-width: 20em;
+    max-width: 37em;
 }
 
 #intro .text {

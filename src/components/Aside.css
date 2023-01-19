@@ -1,5 +1,5 @@
 aside {
-    box-shadow: 0 0 5px var(--darkestBlue);
+    box-shadow: 0 0 5px var(--fontColor);
     height: calc(100vh - var(--headerHeight));
     width: var(--asideWidth);
     position: fixed;
@@ -7,22 +7,41 @@ aside {
     left: 0;
     background-color: inherit;
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
     font-size: 1em;
     z-index:19;
-}
+    animation-name: grow-aside;
+    animation-duration: 1.6s;  
+    animation-delay: 1.6s;
+    animation-timing-function: ease;
+  }
+  
+  @keyframes grow-aside {
+    0% {
+      left: -200px;
+    }
+    40% {
+      left: 0;
+      width: 30em
+    }
+    100% {
+      left: 0px;
+    }
+  }
 
 aside nav {
-    width: 100%;
+    width: 90%;
     text-align: center;
-    border-top: 1px solid rgb(110, 194, 222);
+    border-top: 1px solid var(--middleBlue);
 }
 
 aside nav li {
     padding: 0.5em 0;
-    border-bottom: 1px solid rgb(110, 194, 222);
+    border-bottom: 1px solid var(--middleBlue);
 }
 
 aside nav li:hover {
@@ -33,9 +52,17 @@ aside nav li:hover {
 aside .socials {
     bottom: 0;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 2em;
+    grid-template-rows: 2em 2em;
     justify-content: space-evenly;
+    row-gap: 1em;
 }
+
+.socials img {
+    height: 100%;
+    filter: invert(23%) sepia(2%) saturate(4037%) hue-rotate(321deg) brightness(89%) contrast(74%);
+}
+
 
 .profile-image {
     width: 60%;

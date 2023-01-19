@@ -3,7 +3,13 @@
     top: 25em;
     width: 100%;
     background-color: inherit;
-}
+    animation-name: slide-in-bottom;  
+  }
+  
+  @keyframes slide-in-bottom {
+    from {top: 50em;}
+    to {top: 25em;}
+  }
 
 #work .title-medium {
     text-align: center;
@@ -19,13 +25,13 @@
 .portfolio-cards {
     position: relative;
     display: grid;
-    grid-template-columns: 400px 400px;
-    gap: 100px;
-    padding-bottom: 100px;
+    grid-template-columns: 20em 20em;
+    gap: 5em;
+    padding-bottom: 5em;
 }
 
 .portfolio-card {
-    box-shadow: 0 0 3px var(--darkestBlue);
+    box-shadow: 0 0 3px var(--fontColor);
     position: relative;
     padding: 1em;
     display: flex;
@@ -33,8 +39,9 @@
     align-items: center;
     justify-content: space-between;
 }
+
 .portfolio-card:nth-child(even) {
-    top: 100px;
+    top: 5em;
 }
 
 .portfolio-card img {
