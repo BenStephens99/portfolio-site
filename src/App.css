@@ -2,7 +2,7 @@
 
 :root {
   --fontColor: #514644 ;
-  --middleBlue: #7b6967 ;
+  --middleColor: #b79c99 ;
   --backgroundColor: #efc8b1;
 
   --headerHeight: 5em;
@@ -12,17 +12,23 @@
 * {
   margin: 0;
   padding: 0;
-  font-weight: 00;
+  font-weight: 0;
   font-family: sans-serif;
 }
 
 
 body {
   background-color: var(--fontColor);
+  overflow-x: hidden;
 }
 
 .App {
   font-size: 1.1vw;
+}
+@media screen and (min-width : 2000px) {
+  .App {
+    font-size: 21px;
+  }
 }
 
 
@@ -45,7 +51,7 @@ button {
 }
 
 button:hover {
-  background-color: var(--middleBlue);
+  background-color: var(--middleColor);
   cursor: pointer;
 }
 
@@ -109,4 +115,12 @@ main.light {
 
 .profile-image {
   border-radius: 50%;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
 }

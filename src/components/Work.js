@@ -7,6 +7,7 @@ import cyber from "../images/cyber-assure.png"
 
 function Work() {
 
+
     return (
         <div id="work" className="box">
             <div className="box-content">
@@ -30,9 +31,11 @@ function Work() {
                             </p>
                         </>}
                     />
-                    <PortfolioCard title="Cyber-Assure" image={cyber} />
+                    <PortfolioCard
+                        title="Cyber-Assure" image={cyber} />
 
-                    <PortfolioCard title="University Works" />
+                    <PortfolioCard
+                        title="University Works" />
                 </div>
             </div>
         </div>

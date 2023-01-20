@@ -7,12 +7,10 @@ aside {
     left: 0;
     background-color: inherit;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
-    font-size: 1em;
     z-index:19;
     animation-name: grow-aside;
     animation-duration: 1.6s;  
@@ -22,7 +20,7 @@ aside {
   
   @keyframes grow-aside {
     0% {
-      left: -200px;
+      left: -250px;
     }
     40% {
       left: 0;
@@ -36,16 +34,16 @@ aside {
 aside nav {
     width: 90%;
     text-align: center;
-    border-top: 1px solid var(--middleBlue);
+    border-top: 1px solid var(--middleColor);
 }
 
 aside nav li {
     padding: 0.5em 0;
-    border-bottom: 1px solid var(--middleBlue);
+    border-bottom: 1px solid var(--middleColor);
 }
 
 aside nav li:hover {
-    color: var(--middleBlue);
+    color: var(--middleColor);
     cursor: pointer;
 }
 

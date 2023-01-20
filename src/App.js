@@ -8,8 +8,13 @@ import Work from './components/Work';
 
 export const ThemeContext = React.createContext(null)
 
+
 function App() {
+
+ 
+
   const [theme, setTheme] = React.useState("light");
+  
 
   const toggleTheme = () => {
     setTheme((currentTheme) => (currentTheme === "light" ? "dark" : "light"));

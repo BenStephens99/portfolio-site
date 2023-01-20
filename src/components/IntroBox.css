@@ -2,7 +2,7 @@
     position: absolute;
     display: flex;
     width: 70%;
-    height: 25em;
+    height: 34em;
     z-index: 9;
     background-color: inherit;
     animation-name: slide-intro;

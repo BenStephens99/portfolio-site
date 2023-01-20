@@ -10,7 +10,8 @@ function IntroBox() {
                 <div className="text">
                     <p>Recent Computer Science graduate from the University of Brighton, England.</p>
                     <p>Looking to put to use the skills I've
-                        gained during my time at university, side projects and professional certificates. </p>
+                        gained during my time at university, side projects and professional certificates into
+                        professional use. </p>
                 </div>
             </div>
         </div>

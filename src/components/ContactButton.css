@@ -1,14 +1,14 @@
 .contact-button {
-    height: calc( 100% + 1px);
+    height: calc( 100%  + 1px);
     padding: 0 4em;
     border: none;
     background-color: var(--fontColor);
     font-weight: 500;
     font-size: 0.8em;
-    color: white;
+    text-align: center;
 }
 
 .contact-button:hover {
-    background-color: var(--middleBlue);
+    background-color: var(--middleColor);
     cursor: pointer;
 }

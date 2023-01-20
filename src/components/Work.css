@@ -1,19 +1,22 @@
 #work {
     position: absolute;
-    top: 25em;
+    top: 33em;
     width: 100%;
     background-color: inherit;
-    animation-name: slide-in-bottom;  
-  }
-  
-  @keyframes slide-in-bottom {
-    from {top: 50em;}
-    to {top: 25em;}
-  }
+    animation-name: slide-in-bottom;
+    z-index: 7;
+}
+
+@keyframes slide-in-bottom {
+    from {
+        top: 50em;
+    }
+
+}
 
 #work .title-medium {
     text-align: center;
-    padding-bottom: 1em;
+    padding-bottom: 2em;
 }
 
 #work .box-content {
@@ -26,8 +29,8 @@
     position: relative;
     display: grid;
     grid-template-columns: 20em 20em;
-    gap: 5em;
     padding-bottom: 5em;
+    gap: 10em;
 }
 
 .portfolio-card {
@@ -38,10 +41,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    transition: 2s;
 }
 
 .portfolio-card:nth-child(even) {
     top: 5em;
+    z-index: inherit;
 }
 
 .portfolio-card img {
@@ -54,4 +59,15 @@
     padding-bottom: 1em;
 }
 
+.portfolio-card.hidden:nth-child(odd) {
+    left: -30em;
+}
+
+.portfolio-card.hidden:nth-child(even) {
+    left: -50em;
+}
+
+.portfolio-card.show {
+    left: 0;
+}
 
