@@ -1,15 +1,14 @@
 #intro {
-    position: absolute;
+    position: relative;
     display: flex;
-    width: 70%;
-    height: 34em;
+    width: 75%;
+    height: 70vh;
     z-index: 9;
-    background-color: inherit;
     animation-name: slide-intro;
   }
   
   @keyframes slide-intro {
-    from {left: -80%;}
+    from {left: -100%;}
     to {left: 0;}
   }
 
@@ -19,4 +18,19 @@
 
 #intro .text {
     margin-top: 3em;
+}
+
+@media screen and (max-width: 600px) {
+  #intro {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+    
+  @keyframes slide-intro {
+    from {left: -100vw;}
+    to {left: 0;}
+  }
+
 }

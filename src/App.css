@@ -1,44 +1,50 @@
-@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@200;400;500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap');
 
 :root {
-  --fontColor: #514644 ;
-  --middleColor: #b79c99 ;
+  --fontColor: #514644;
+  --middleColor: #b79c99;
   --backgroundColor: #efc8b1;
 
   --headerHeight: 5em;
-  --asideWidth: 8em
+  --asideWidth: 8em;
 }
 
 * {
   margin: 0;
   padding: 0;
   font-weight: 0;
-  font-family: sans-serif;
 }
 
 
 body {
   background-color: var(--fontColor);
   overflow-x: hidden;
+  width: 100vw;
 }
 
 .App {
-  font-size: 1.1vw;
-}
-@media screen and (min-width : 2000px) {
-  .App {
-    font-size: 21px;
-  }
+  font-size: 1.2vw;
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
-
-#mySkills, #work, #intro {
-    animation-duration: 1.5s;  
-    animation-delay: 2.5s;
-    animation-fill-mode: backwards;
+.App.light {
+  background-color: var(--fontColor);
 }
 
-#header, #aside {
+.light main {
+  background-color: var(--fontColor);
+}
+
+#mySkills,
+#work,
+#intro {
+  animation-duration: 1.5s;
+  animation-delay: 2.5s;
+  animation-fill-mode: backwards;
+}
+
+#header,
+#aside {
   animation-fill-mode: backwards;
 }
 
@@ -76,7 +82,6 @@ main {
   width: calc(100% - var(--asideWidth));
   height: 100%;
   background-color: inherit;
-  display: flex;
 }
 
 main.light {
@@ -85,6 +90,8 @@ main.light {
 
 .title-large {
   font-size: 3.5em;
+  line-height: 90%;
+  
 }
 
 .title-large.shadow {
@@ -94,6 +101,7 @@ main.light {
 
 .title-medium {
   font-size: 2.5em;
+  line-height: 98%;
 }
 
 .title-medium.shadow {
@@ -109,18 +117,58 @@ main.light {
   box-shadow: 0 0 3px var(--fontColor);
 }
 
+.light .box {
+  background-color: var(--backgroundColor);
+}
+
 .box-content {
-  padding: 2em 4em;
+  margin: 2em 4em;
 }
 
 .profile-image {
   border-radius: 50%;
 }
 
-.hidden {
-  opacity: 0;
+
+@media screen and (min-width : 2000px) {
+  .App {
+    font-size: 21px;
+  }
 }
 
-.show {
-  opacity: 1;
+@media screen and (max-width: 980px) {
+  .App {
+    font-size: 18px;
+  }
+}
+
+@media (orientation: portrait) and (min-height: 500px) {
+  main {
+    width: 100vw;
+    left: 0;
+    right: 0;
+  }
+
+  @media screen and (max-width: 600px) {
+    main {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .box-content {
+      padding: 2em;
+      margin: auto;
+    }
+  }
+
+  .title-large {
+    font-size: 2.5em;
+  }
+  
+  .title-medium {
+    font-size: 1.8em;
+  }
+
+
 }

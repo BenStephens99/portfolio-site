@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Aside from './components/Aside';
+import EnergyApp from './components/EnergyApp';
 import Header from './components/Header';
 import IntroBox from './components/IntroBox';
 import MySkills from './components/MySkills';
@@ -10,8 +11,6 @@ export const ThemeContext = React.createContext(null)
 
 
 function App() {
-
- 
 
   const [theme, setTheme] = React.useState("light");
   

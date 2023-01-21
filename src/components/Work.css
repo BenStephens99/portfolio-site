@@ -1,25 +1,108 @@
 #work {
-    position: absolute;
-    top: 33em;
+    position: relative;
     width: 100%;
-    background-color: inherit;
     animation-name: slide-in-bottom;
     z-index: 7;
 }
 
 @keyframes slide-in-bottom {
     from {
-        top: 50em;
+        top: 100vh;
+    }
+    to {
+        top: 0;
+    }
+}
+
+#work .menu {
+    top: 0em;
+    position: absolute;
+    z-index: 6;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.hide-card {
+    animation-name: go-behind;
+    animation-duration: 800ms;
+    animation-fill-mode: forwards;
+}
+
+
+.show-card {
+    animation-name: come-forward;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes come-forward {
+    0% {
+        top: 4em;
+        left: calc(100vw * 1.5);
+        width: 85%;
+        display: none;
     }
 
+    40% {
+        top: 4em;
+        left: calc(100vw * 1.5);
+        width: 85%;
+        display: none;
+    }
+
+    60% {
+        top: 4em;
+        left: 50%;
+        width:85%;
+        font-size: 80%;
+    }
+
+    80% {
+        top: 4em;
+        left: 50%;
+        width: 85%;
+        font-size: 80%;
+    }
+    
+    100% {
+        left: 50%;
+        font-size: 100%;
+        top: 0;
+        width: 100%;
+    }
 }
 
-#work .title-medium {
+@keyframes go-behind {
+    35% {
+        top: 4em;
+        width: 85%;
+        font-size: 80%;
+        left: 50%;
+    }
+
+    60% {
+        top: 4em;
+        width:85%;
+        font-size: 80%;
+        left: 50%;
+    }
+
+    100% {
+        top: 4em;
+        width: 85%;
+        left: -100vw;
+        font-size: 80%;
+    }
+}
+
+
+.menu .title-medium {
     text-align: center;
-    padding-bottom: 2em;
+    padding-bottom: 1em;
 }
 
-#work .box-content {
+.menu .box-content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,30 +111,37 @@
 .portfolio-cards {
     position: relative;
     display: grid;
+    padding-top: 1em;
     grid-template-columns: 20em 20em;
-    padding-bottom: 5em;
-    gap: 10em;
+    padding-bottom: 10em;
+    gap: 8em;
 }
 
 .portfolio-card {
     box-shadow: 0 0 3px var(--fontColor);
     position: relative;
-    padding: 1em;
+    padding: 2em;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    transition: 2s;
+    left: -40vh;
+    opacity: 0;
 }
 
 .portfolio-card:nth-child(even) {
-    top: 5em;
+    top: 10em;
     z-index: inherit;
 }
 
 .portfolio-card img {
     width: 80%;
+}
 
+.portfolio-card button {
+    width: 50%;
+    padding: 5% 0;
+    margin: 1em;
 }
 
 .portfolio-card h3 {
@@ -59,15 +149,138 @@
     padding-bottom: 1em;
 }
 
-.portfolio-card.hidden:nth-child(odd) {
-    left: -30em;
-}
-
-.portfolio-card.hidden:nth-child(even) {
-    left: -50em;
+.portfolio-card.hidden {
+    opacity: 0;
 }
 
 .portfolio-card.show {
-    left: 0;
+    animation-duration: 1s;
+    animation-delay: 200ms;
+    animation-fill-mode: forwards;
+    animation-name: fade-portfolio-card;
 }
 
+@keyframes fade-portfolio-card {
+    from {
+        left: -40vh;
+        opacity: 0;
+    }
+    
+    to {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+
+@media (orientation: portrait) {
+
+    .portfolio-cards {
+        grid-template-columns: 25em;
+        padding-bottom: 10em;
+        gap: 8em;
+    }
+
+    .portfolio-card:nth-child(even) {
+        top: 0;
+    }
+
+    .portfolio-card.hidden:nth-child(odd) {
+        left: -50vw;
+    }
+
+    .portfolio-card.hidden:nth-child(even) {
+        left: -50vw;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    #work {
+        position: relative;
+        width: 100%;
+        top: 0;
+    }
+
+    .portfolio-cards {
+        grid-template-columns: 100%;
+        padding-bottom: 0;
+        gap: 5em;
+        justify-content: center;
+    }
+
+    .portfolio-card {
+        padding: 1em;
+
+    }
+
+    .portfolio-card img {
+        width: 100%;
+    }
+
+    .portfolio-card button {
+        width: 75%;
+        padding: 1.5em;
+        margin: 1em;
+    }
+
+    
+@keyframes come-forward {
+    0% {
+        top: 2em;
+        left: calc(100vw * 1.5);
+        width: 90%;
+    }
+
+    40% {
+        top: 2em;
+        left: calc(100vw * 1.5);
+        width: 90%;
+    }
+
+    60% {
+        top: 2em;
+        left: 50%;
+        width:90%;
+        font-size: 80%;
+    }
+
+    80% {
+        top: 2em;
+        left: 50%;
+        width: 90%;
+        font-size: 80%;
+    }
+    
+    100% {
+        left: 50%;
+        font-size: 100%;
+        top: 0;
+        width: 100%;
+    }
+}
+
+@keyframes go-behind {
+    35% {
+        top: 2em;
+        width: 90%;
+        font-size: 80%;
+        left: 50%;
+    }
+
+    60% {
+        top: 2em;
+        width:90%;
+        font-size: 80%;
+        left: 50%;
+    }
+
+    100% {
+        top: 2em;
+        width: 90%;
+        left: -100vw;
+        font-size: 80%;
+    }
+}
+
+}

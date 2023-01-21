@@ -1,70 +1,90 @@
 aside {
-    box-shadow: 0 0 5px var(--fontColor);
-    height: calc(100vh - var(--headerHeight));
-    width: var(--asideWidth);
-    position: fixed;
-    top: var(--headerHeight);
-    left: 0;
-    background-color: inherit;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-around;
-    text-align: center;
-    z-index:19;
-    animation-name: grow-aside;
-    animation-duration: 1.6s;  
-    animation-delay: 1.6s;
-    animation-timing-function: ease;
-  }
-  
-  @keyframes grow-aside {
-    0% {
-      left: -250px;
-    }
-    40% {
-      left: 0;
-      width: 30em
-    }
-    100% {
-      left: 0px;
-    }
+  box-shadow: 0 0 5px var(--fontColor);
+  height: calc(100vh - var(--headerHeight));
+  width: var(--asideWidth);
+  position: fixed;
+  top: var(--headerHeight);
+  left: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  z-index: 19;
+  animation-name: grow-aside;
+  animation-duration: 1.6s;
+  animation-delay: 1.6s;
+  animation-timing-function: ease;
+}
+
+.light aside {
+  background-color: var(--backgroundColor);
+}
+
+@keyframes grow-aside {
+  0% {
+    left: calc( 0px - var(--asideWidth));
   }
 
+  40% {
+    left: 0;
+    width: 30%
+  }
+}
+
 aside nav {
-    width: 90%;
-    text-align: center;
-    border-top: 1px solid var(--middleColor);
+  width: 90%;
+  text-align: center;
 }
 
 aside nav li {
-    padding: 0.5em 0;
-    border-bottom: 1px solid var(--middleColor);
+  padding: 0.5em 0;
+  border-bottom: 1px solid var(--middleColor);
+}
+
+aside nav li:nth-child(1) {
+  border-top: 1px solid var(--middleColor);
 }
 
 aside nav li:hover {
-    color: var(--middleColor);
-    cursor: pointer;
+  color: var(--middleColor);
+  cursor: pointer;
 }
 
 aside .socials {
-    bottom: 0;
-    display: grid;
-    grid-template-columns: 2em;
-    grid-template-rows: 2em 2em;
-    justify-content: space-evenly;
-    row-gap: 1em;
+  bottom: 0;
+  display: grid;
+  grid-template-columns: 2.5em;
+  grid-template-rows: 2.5em 2.5em;
+  row-gap: 1em;
 }
 
 .socials img {
-    height: 100%;
-    filter: invert(23%) sepia(2%) saturate(4037%) hue-rotate(321deg) brightness(89%) contrast(74%);
+  height: 70%;
+  width: auto;
+  filter: invert(23%) sepia(2%) saturate(4037%) hue-rotate(321deg) brightness(89%) contrast(74%);
+  margin: auto;
+  transition: 200ms;
+}
+
+.socials img:hover {
+  height: 100%;
+  cursor: pointer;
+
+}
+
+.profile-image {
+  width: 60%;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 1em;
 }
 
 
-.profile-image {
-    width: 60%;
-    height: auto;
-    margin: 0 auto;
-    margin-top: 1em;
+@media (orientation: portrait) and (min-height: 500px) {
+ 
+  aside {
+    left: calc(-5px - var(--asideWidth));
+  }
+  
 }
