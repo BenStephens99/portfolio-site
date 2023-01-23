@@ -1,9 +1,8 @@
 import React from "react";
-import './MySkills.css';
 
-function MySkills () {
+function MySkills (props) {
     return (
-        <div id="mySkills" className="box">
+        <div id="mySkills" className={`box ${props.delay}`}>
             <div className="box-content">
                 <h2 className="title-medium">My</h2>
                 <h2 className="title-medium shadow">Skills</h2>

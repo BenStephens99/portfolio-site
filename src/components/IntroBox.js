@@ -1,18 +1,24 @@
 import React from "react";
-import './IntroBox.css';
 
-function IntroBox() {
+function IntroBox(props) {
     return (
-        <div id="intro" className="box">
+        <div id="intro" className={`box ${props.delay}`}>
             <div className="box-content">
-                <h1 className="title-large solid">Front-End</h1>
-                <h1 className="title-large shadow">Developer</h1>
-                <div className="text">
-                    <p>Recent Computer Science graduate from the University of Brighton, England.</p>
-                    <p>Looking to put to use the skills I've
-                        gained during my time at university, side projects and professional certificates into
-                        professional use. </p>
+                <div>
+                    <h1 className="title-large solid">Front-End</h1>
+                    <h1 className="title-large shadow">Developer</h1>
+
+                    <div className="text">
+                        <p>Welcome to my website! I'm Ben, a computer science graduate from the University of Brighton, England, with a
+                            passion for front-end development. </p>
+
+                        <p>On this portfolio site, you will find a selection of my most recent projects.
+                            Please feel free to take a look around and do not hesitate to contact me if you have
+                            any questions or would like to discuss working together. </p>
+                    </div>
                 </div>
+                <button>More about me</button>
+
             </div>
         </div>
     )

@@ -15,6 +15,10 @@
   font-weight: 0;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
 
 body {
   background-color: var(--fontColor);
@@ -23,8 +27,9 @@ body {
 }
 
 .App {
-  font-size: 1.2vw;
+  font-size: 2.4vh;
   font-family: 'Plus Jakarta Sans', sans-serif;
+  scroll-behavior: smooth;
 }
 
 .App.light {
@@ -36,11 +41,18 @@ body {
 }
 
 #mySkills,
-#work,
-#intro {
-  animation-duration: 1.5s;
-  animation-delay: 2.5s;
+#intro,
+footer {
+  animation-duration: 1.2s;
   animation-fill-mode: backwards;
+}
+
+.delay-two-half {
+  animation-delay: 2.5s;
+}
+
+.no-delay {
+  animation-delay: 0s;
 }
 
 #header,
@@ -75,13 +87,25 @@ li {
   background-color: black;
 }
 
-main {
-  position: relative;
+#mainContainer {
+  position: absolute;
   top: var(--headerHeight);
   left: var(--asideWidth);
-  width: calc(100% - var(--asideWidth));
-  height: 100%;
+  width: calc(100vw - var(--asideWidth));
+  height: calc(100vh - var(--headerHeight));
   background-color: inherit;
+}
+
+main {
+  position: absolute;
+  background-color: inherit;
+  top: 0em;
+  position: absolute;
+  z-index: 6;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 main.light {
@@ -122,19 +146,95 @@ main.light {
 }
 
 .box-content {
-  margin: 2em 4em;
+  padding: 2em 5em;
 }
 
 .profile-image {
   border-radius: 50%;
 }
 
+.hide-card {
+  animation-name: go-behind;
+  animation-duration: 800ms;
+  animation-fill-mode: forwards;
+}
 
-@media screen and (min-width : 2000px) {
-  .App {
-    font-size: 21px;
+
+.show-card {
+  animation-name: come-forward;
+  animation-duration: 800ms;
+  animation-fill-mode: forwards;
+}
+
+.home.hide-card {
+  animation: none;
+}
+
+
+@keyframes go-up {
+  from {
+    top:0;
+  }
+
+  to {
+    top: -100vh;
   }
 }
+
+@keyframes come-forward {
+  0% {
+      top: 4em;
+      left: calc(100vw * 1.5);
+      width: 85%;
+  }
+
+  45% {
+      top: 4em;
+      left: 50%;
+      width:85%;
+      font-size: 85%;
+  }
+
+  70% {
+      top: 4em;
+      left: 50%;
+      width: 85%;
+      font-size: 85%;
+  }
+  
+  100% {
+      left: 50%;
+      font-size: 100%;
+      top: 0;
+      width: 100%;
+  }
+}
+
+@keyframes go-behind {
+  25% {
+      top: 4em;
+      width: 85%;
+      font-size: 85%;
+      left: 50%;
+  }
+
+  50% {
+      top: 4em;
+      width:85%;
+      font-size: 85%;
+      left: 50%;
+  }
+
+  100% {
+      top: 4em;
+      width: 85%;
+      left: -100%;
+      font-size: 85%;
+      display: none;
+  }
+}
+
+
 
 @media screen and (max-width: 980px) {
   .App {

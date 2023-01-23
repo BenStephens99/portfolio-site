@@ -20,6 +20,26 @@ header {
   background-color: var(--backgroundColor);
 }
 
+.contact-button {
+  height: calc( 100%  + 1px);
+  width: 16em;
+  border: none;
+  background-color: var(--fontColor);
+  font-weight: bold;
+  text-align: center;
+}
+
+.contact-button:hover {
+  background-color: var(--middleColor);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) { 
+  .contact-button {
+      width: 10em;
+  }
+}
+
 @keyframes slide-header {
   0% {
     top: -200px;

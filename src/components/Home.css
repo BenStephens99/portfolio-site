@@ -1,0 +1,196 @@
+#intro {
+    position: relative;
+    display: flex;
+    width: 75%;
+    height: 75%;
+    z-index: 9;
+    animation-name: slide-intro;
+    justify-content: space-between;
+  }
+  
+  @keyframes slide-intro {
+    from {left: -90%;}
+    to {left: 0;}
+  }
+
+  .hide-card #intro {
+    animation-name: slide-out-intro;
+  }
+
+  @keyframes slide-out-intro {
+    from {left: 0;}
+    to {left: -90%;}
+  }
+
+#intro .box-content {
+    max-width: 37em;
+    display: grid;
+    justify-content: space-between;
+}
+
+#intro .text {
+    margin-top: 3em;
+}
+
+#intro button {
+  height: 4em;
+  width: 12em;
+  align-self: center;
+}
+
+#mySkills {
+    position: absolute;
+    width: 35%;
+    z-index: 8;
+    top: 0;
+    right: 0;
+    height: 85%;
+    text-align: right;
+    justify-content: right;
+    display: flex;
+    animation-name: slide-in-right;
+  }
+
+  @keyframes slide-in-right {
+    from {
+      right: -40%;
+    }
+  
+    to {
+      right: 0;
+    }
+  }
+
+  .hide-card #mySkills {
+    animation-name: slide-out-right;
+  }
+
+  @keyframes slide-out-right {
+    from {
+      right: 0;
+    }
+  
+    to {
+      right: -40%;
+    }
+  }
+
+
+
+  footer {
+    height: 30%;
+    display: flex;
+    align-items: flex-end;
+    padding: 1em;
+    box-sizing: border-box;
+    font-size: 0.8em;
+    animation-name: slide-from-bottom;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+  }
+
+  .light footer {
+    background-color: var(--backgroundColor);
+  }
+
+  @keyframes slide-from-bottom {
+    from {
+      bottom: -60%;
+    }
+  
+    to {
+      bottom: 0;
+    }
+  }
+
+  .hide-card footer {
+    animation-name: slide-out-bottom;
+  }
+
+  @keyframes slide-out-bottom {
+    from {
+      bottom: 0
+    }
+  
+    to {
+      bottom: -60%;
+    }
+  }
+  
+  #mySkills .box-content {
+    display: grid;
+    grid-template-rows: 2.5em 2.5em auto;
+    justify-content: flex-start;
+  }
+  
+  #mySkills .skills {
+    margin-top: 2em;
+    display: grid;
+    align-items: center;
+  }
+  
+  @media screen and (max-width: 600px) {
+    #intro {
+        position: relative;
+        width: 100%;
+        height: auto;
+      }
+    
+        
+      @keyframes slide-intro {
+        from {left: -100vw;}
+        to {left: 0;}
+      }
+
+
+    #mySkills {
+      position: relative;
+      width: 100%;
+      height: auto;
+    }
+  
+    #mySkills {
+      text-align: center;
+      
+    }
+  
+    #mySkills .box-content {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto auto;
+      justify-content: flex-start;
+    }
+    
+    #mySkills .title-medium:nth-child(1){
+      text-align: right;
+      margin-right: 0.1em;
+    }
+  
+    #mySkills .title-medium:nth-child(2){
+      text-align: left;
+      margin-left: 0.1em;
+    }
+    
+  
+    #mySkills .skills {
+      display: flex; 
+      flex-wrap: wrap;
+      gap: 1em;
+      justify-content: center;
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+  
+    @keyframes slide-in-right {
+      from {
+        right: -100vw;
+      }
+    
+      to {
+        right: 0;
+      }
+    }
+    
+  
+  }

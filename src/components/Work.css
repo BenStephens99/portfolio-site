@@ -1,20 +1,4 @@
 #work {
-    position: relative;
-    width: 100%;
-    animation-name: slide-in-bottom;
-    z-index: 7;
-}
-
-@keyframes slide-in-bottom {
-    from {
-        top: 100vh;
-    }
-    to {
-        top: 0;
-    }
-}
-
-#work .menu {
     top: 0em;
     position: absolute;
     z-index: 6;
@@ -23,86 +7,12 @@
     transform: translate(-50%);
 }
 
-.hide-card {
-    animation-name: go-behind;
-    animation-duration: 800ms;
-    animation-fill-mode: forwards;
-}
-
-
-.show-card {
-    animation-name: come-forward;
-    animation-duration: 1.2s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes come-forward {
-    0% {
-        top: 4em;
-        left: calc(100vw * 1.5);
-        width: 85%;
-        display: none;
-    }
-
-    40% {
-        top: 4em;
-        left: calc(100vw * 1.5);
-        width: 85%;
-        display: none;
-    }
-
-    60% {
-        top: 4em;
-        left: 50%;
-        width:85%;
-        font-size: 80%;
-    }
-
-    80% {
-        top: 4em;
-        left: 50%;
-        width: 85%;
-        font-size: 80%;
-    }
-    
-    100% {
-        left: 50%;
-        font-size: 100%;
-        top: 0;
-        width: 100%;
-    }
-}
-
-@keyframes go-behind {
-    35% {
-        top: 4em;
-        width: 85%;
-        font-size: 80%;
-        left: 50%;
-    }
-
-    60% {
-        top: 4em;
-        width:85%;
-        font-size: 80%;
-        left: 50%;
-    }
-
-    100% {
-        top: 4em;
-        width: 85%;
-        left: -100vw;
-        font-size: 80%;
-    }
-}
-
-
-.menu .title-medium {
+#work .title-medium {
     text-align: center;
-    padding-bottom: 1em;
+    padding-bottom: 20em;
 }
 
-.menu .box-content {
+#work .box-content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -155,14 +65,13 @@
 
 .portfolio-card.show {
     animation-duration: 1s;
-    animation-delay: 200ms;
     animation-fill-mode: forwards;
     animation-name: fade-portfolio-card;
 }
 
 @keyframes fade-portfolio-card {
     from {
-        left: -40vh;
+        left: 40vh;
         opacity: 0;
     }
     
@@ -242,14 +151,14 @@
         top: 2em;
         left: 50%;
         width:90%;
-        font-size: 80%;
+        font-size: 90%;
     }
 
     80% {
         top: 2em;
         left: 50%;
         width: 90%;
-        font-size: 80%;
+        font-size: 90%;
     }
     
     100% {
@@ -264,14 +173,14 @@
     35% {
         top: 2em;
         width: 90%;
-        font-size: 80%;
+        font-size: 90%;
         left: 50%;
     }
 
     60% {
         top: 2em;
         width:90%;
-        font-size: 80%;
+        font-size: 90%;
         left: 50%;
     }
 
@@ -279,7 +188,7 @@
         top: 2em;
         width: 90%;
         left: -100vw;
-        font-size: 80%;
+        font-size: 90%;
     }
 }
 
