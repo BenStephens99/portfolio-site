@@ -1,4 +1,5 @@
 import React from "react";
+import arrow from '../images/arrow.svg'
 
 function IntroBox(props) {
     return (
@@ -12,14 +13,17 @@ function IntroBox(props) {
                         <p>Welcome to my website! I'm Ben, a computer science graduate from the University of Brighton, England, with a
                             passion for front-end development. </p>
 
-                        <p>On this portfolio site, you will find a selection of my most recent projects.
+                        <p>On this site, you will find a selection of my most recent projects.
                             Please feel free to take a look around and do not hesitate to contact me if you have
                             any questions or would like to discuss working together. </p>
                     </div>
+                    <div className="underline-on-hover" onClick={props.click}>
+                        <div>More about me</div>
+                        <div><img className="svg" src={arrow} alt="" /></div>
+                    </div>
                 </div>
                 <div className="links">
-                    <button>More about me</button>
-                    <button>View my Work</button>
+                    <button>View My Work</button>
                 </div>
 
 

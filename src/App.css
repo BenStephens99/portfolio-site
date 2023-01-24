@@ -196,6 +196,38 @@ main.light {
 }
 
 
+.underline-on-hover {
+  display: flex;
+  align-items: center;
+  height: 2em;
+  gap: 0.5em;
+  font-weight: bold;
+  position: relative;
+}
+
+.underline-on-hover img {
+  height: 2em;
+}
+
+.underline-on-hover:after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -0.5em;
+  transition: 0.7s;
+  background-color: var(--fontColor)
+}
+.underline-on-hover:hover:after {
+  width: 100%
+}
+
+.underline-on-hover:hover {
+  cursor: pointer;
+}
+
+
 @keyframes go-up {
   from {
     top:0;

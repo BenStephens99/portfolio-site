@@ -86,28 +86,9 @@
     
 }
 
-.portfolio-card button {
+.portfolio-card li {
     float: right;
-    background-color: var(--backgroundColor);
-    color: var(--fontColor);
-    font-weight: bold;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    height: 2em;
-    justify-content: center;
-    gap: 0.5em;
     margin-top: 1em;
-    border-bottom: 3px solid var(--backgroundColor);
-
-}
-
-.portfolio-card button:hover {
-    border-bottom: 3px solid var(--fontColor);
-}
-
-.portfolio-card button img {
-    height: 2em;
 }
 
 .portfolio-card h3 {

@@ -16,10 +16,10 @@ function PortfolioCard(props) {
             </div>
             <div>
                 <div>{props.description}</div>
-                <button onClick={props.click}>
+                <li className="underline-on-hover" onClick={props.click}>
                     <div> {props.buttonText} </div>
                     <div><img className="svg" src={arrow} alt="" /></div>
-                </button>
+                </li>
             </div>
             <img src={props.image} alt="" />
         </div>
