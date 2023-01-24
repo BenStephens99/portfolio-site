@@ -1,75 +1,138 @@
-#work {
+.work {
     top: 0em;
     position: absolute;
     z-index: 6;
     width: 100%;
     left: 50%;
     transform: translate(-50%);
-    text-align: center;
 }
 
 
-#work .text {
+.work .text {
     width: 35em;
     max-width: 98%;
 }
 
-#work .title-medium {
-    text-align: center;
+.work .box-content {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 5em;
 }
 
-#work .box-content {
+.portfolio-intro {
+    height: calc(98vh - var(--headerHeight));
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2em;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.down-arrow {
+    position: absolute;
+    bottom: 0;
+    font-size: 2em;
+    opacity: 0.5;
+    cursor: pointer;
+    animation-name: bounce-up-down-repeating;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+
+@keyframes bounce-up-down-repeating {
+    0% {bottom: 0;}
+    50% {bottom: 30px;}
+    100% {bottom: 0;}
+}
+
+.hide {
+    opacity: 0;
 }
 
 .portfolio-cards {
     position: relative;
     display: grid;
     padding-top: 1em;
-    grid-template-columns: 25em 25em;
-    grid-auto-rows: auto;
-    padding-bottom: 20em;
-    gap: 12.5em;
+    grid-template-columns: 50em;
+    grid-auto-rows: 60vh;
+    gap: 10em;
+    justify-content: center;
 }
 
 .portfolio-card {
-    box-shadow: 0 0 3px var(--fontColor);
     position: relative;
-    padding: 2em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
     left: -40vh;
     opacity: 0;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 30% 70%;
+    padding: 3em;
+    border-bottom: 1px solid var(--backgroundColor);
+
 }
 
-.portfolio-card:nth-child(even) {
-    top: 20em;
-    z-index: inherit;
+.portfolio-card:nth-child(1) {
+    border-top: 1px solid var(--backgroundColor);
 }
 
 .portfolio-card img {
-    width: 80%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 100%;
+    margin: auto;
+    
 }
 
 .portfolio-card button {
-    width: 50%;
-    padding: 5% 0;
-    margin: 1em;
+    float: right;
+    background-color: var(--backgroundColor);
+    color: var(--fontColor);
+    font-weight: bold;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    height: 2em;
+    justify-content: center;
+    gap: 0.5em;
+    margin-top: 1em;
+    border-bottom: 3px solid var(--backgroundColor);
+
+}
+
+.portfolio-card button:hover {
+    border-bottom: 3px solid var(--fontColor);
+}
+
+.portfolio-card button img {
+    height: 2em;
 }
 
 .portfolio-card h3 {
-    text-align: center;
-    padding-bottom: 1em;
+    font-size: 2em
 }
 
 .portfolio-card.hidden {
-    opacity: 0;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-name: hide-portfolio-card;
+}  
+
+@keyframes hide-portfolio-card {
+    from {
+        left: 0;
+        opacity: 1;
+    }
+
+    to {
+        left: 40vh;
+        opacity: 0;
+    }
 }
+
+
 
 .portfolio-card.show {
     animation-duration: 1s;

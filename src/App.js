@@ -6,6 +6,8 @@ import EnergyApp from './components/EnergyApp';
 import Header from './components/Header';
 import Home from './components/Home';
 import Work from './components/Work'
+import About from './components/About';
+import Contact from './components/Contact';
 
 export const ThemeContext = React.createContext(null)
 export const HomeDelay = React.createContext(null)
@@ -37,8 +39,10 @@ function App() {
           <div id='mainContainer'>
               <Routes>
                 <Route path="/" element={<Home name="home" delay={delay} />}></Route>
-                <Route path='/Work' element={<Work delay={delay} />}></ Route>
-                <Route path='/Energy-App' element={<EnergyApp delay={delay} />}></Route>
+                <Route path='/work' element={<Work />}></ Route>
+                <Route path='work/energy-app' element={<EnergyApp />}></Route>
+                <Route path='/about' element ={<About />}></Route>
+                <Route path='/contact' element={<Contact />}></Route>
               </Routes>
           </div>
         </MainRefContext.Provider>

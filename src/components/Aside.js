@@ -4,7 +4,6 @@ import linkedIn from '../images/linkedIn.svg'
 import email from '../images/email.svg'
 import github from '../images/github.svg'
 import ThemeToggler from "./ThemeToggler";
-import { Link } from "react-router-dom";
 import { HomeDelay } from "../App";
 import { MainRefContext } from "../App";
 import { scrollIntoViewWithOffset } from "./functions";
@@ -24,7 +23,7 @@ function Aside() {
     async function goToPage(des, delay) {
         homeDelay.turnOffDelay();
         if (location.pathname !== des) {
-            scrollIntoViewWithOffset('header', 0)
+            scrollIntoViewWithOffset('mainContainer', 100)
             mainRef.current.classList.remove('show-card')
             mainRef.current.classList.add('hide-card');
             await wait(delay);
@@ -36,10 +35,10 @@ function Aside() {
         <aside id="aside">
             <ThemeToggler />
             <nav>
-                <li onClick={() => goToPage('/', 700)}>Home</li>
-                <li onClick={() => goToPage('/work', 700)}>Portfolio</li>
-                <li><Link>About</Link></li>
-                <li><Link>Contact</Link></li>
+                <li onClick={() => goToPage('/', 1000)}>Home</li>
+                <li onClick={() => goToPage('/work', 1000)}>Portfolio</li>
+                <li onClick={() => goToPage('/about', 1000)}>About</li>
+                <li onClick={() => goToPage('/contact', 1000)}>Contact</li>
             </nav>
             <div className="socials">
                 <a className="svg" href="https://www.linkedin.com/in/stephens-ben/" target="_blank" rel="noreferrer"><img src={linkedIn} alt="LinkedIn" /></a>

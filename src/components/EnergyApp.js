@@ -17,7 +17,7 @@ function EnergyApp() {
     const navigate = useNavigate();
 
     async function goToPage(des, delay) {
-        scrollIntoViewWithOffset('header', 0)
+        scrollIntoViewWithOffset('mainContainer', 100)
         mainRef.current.classList.remove('show-card');
         mainRef.current.classList.add('hide-card');
         await wait(delay);
@@ -63,7 +63,7 @@ function EnergyApp() {
                     </div>
 
 
-                    <button onClick={() => goToPage('/work', 600)}>Back To Portfolio</button>
+                    <button onClick={() => goToPage('/work', 1000)}>Back To Portfolio</button>
                 </div>
             </div>
         </main>

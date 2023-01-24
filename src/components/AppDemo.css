@@ -3,7 +3,7 @@
     width: 55em;
     max-width: 98%;
     height: 42em;
-    border: 1px solid black;
+    box-shadow: 0 0 5px var(--fontColor);
     border-radius: 0.8em;
     overflow: hidden;
     display: grid;
@@ -12,7 +12,8 @@
 }
 
  .demo-header {
-    background-color: white;
+    background-color: var(--backgroundColor);
+    color: var(--fontColor);
     grid-column-start: 1;
     grid-column-end: 3;
     display: flex;
@@ -77,3 +78,5 @@
 .demo-houses-list li.selectedHouse {
     border-left: 0.3em solid red;
 }
+
+
