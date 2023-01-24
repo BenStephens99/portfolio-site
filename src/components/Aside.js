@@ -1,6 +1,5 @@
 import React from "react";
 import './Aside.css';
-import profilePic from '../images/me-grad-small.jpg'
 import linkedIn from '../images/linkedIn.svg'
 import email from '../images/email.svg'
 import github from '../images/github.svg'
@@ -24,7 +23,7 @@ function Aside() {
 
     async function goToPage(des, delay) {
         homeDelay.turnOffDelay();
-        if (location.pathname != des) {
+        if (location.pathname !== des) {
             scrollIntoViewWithOffset('header', 0)
             mainRef.current.classList.remove('show-card')
             mainRef.current.classList.add('hide-card');
@@ -38,8 +37,8 @@ function Aside() {
             <ThemeToggler />
             <nav>
                 <li onClick={() => goToPage('/', 700)}>Home</li>
-                <li><Link>About</Link></li>
                 <li onClick={() => goToPage('/work', 700)}>Portfolio</li>
+                <li><Link>About</Link></li>
                 <li><Link>Contact</Link></li>
             </nav>
             <div className="socials">

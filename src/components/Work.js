@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import './Work.css';
 import PortfolioCard from "./PortfolioCard";
 import octopusLaptop from "../images/octopusLaptop.png"
@@ -31,7 +31,16 @@ function Work() {
             <div id="work">
                 <div className='box'>
                     <div className="box-content">
-                        <h2 className="title-medium">Work</h2>
+                        <h2 className="title-medium">Portfolio</h2>
+                        <div className="text">
+                            <p>Welcome to my portfolio section! Here, you will find a collection of my work, including projects completed for clients,
+                                assignments completed during my time at university, and personal projects that showcase my skills and interests. </p>
+
+                                <p>Each project is accompanied by a brief description and images, so you can get a sense of my process and the final product. </p>
+
+                            <p>I am constantly updating my portfolio with new and exciting projects, so please check back often to see my latest work. Thank you for 
+                                taking the time to visit, and I hope you enjoy what you see.</p>
+                        </div>
                         <div className="portfolio-cards">
                             <PortfolioCard
                                 title="Energy App"
@@ -63,11 +72,11 @@ function Work() {
                             />
 
                             <PortfolioCard
-                                title="University Works" buttonText="Coming Soon"/>
+                                title="University Works" buttonText="Coming Soon" />
 
-                                
+
                             <PortfolioCard
-                                title="Personal Projects" buttonText="Coming Soon"/>
+                                title="Personal Projects" buttonText="Coming Soon" />
                         </div>
                     </div>
                 </div>

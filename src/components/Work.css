@@ -5,17 +5,24 @@
     width: 100%;
     left: 50%;
     transform: translate(-50%);
+    text-align: center;
+}
+
+
+#work .text {
+    width: 35em;
+    max-width: 98%;
 }
 
 #work .title-medium {
     text-align: center;
-    padding-bottom: 1em;
 }
 
 #work .box-content {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 2em;
 }
 
 .portfolio-cards {
@@ -23,8 +30,9 @@
     display: grid;
     padding-top: 1em;
     grid-template-columns: 25em 25em;
+    grid-auto-rows: auto;
     padding-bottom: 20em;
-    gap: 10em;
+    gap: 12.5em;
 }
 
 .portfolio-card {

@@ -63,7 +63,7 @@ function EnergyApp() {
                     </div>
 
 
-                    <button onClick={() => goToPage('/work', 600)}>Back</button>
+                    <button onClick={() => goToPage('/work', 600)}>Back To Portfolio</button>
                 </div>
             </div>
         </main>

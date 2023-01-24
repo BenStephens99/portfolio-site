@@ -5,20 +5,12 @@
     width: 100%;
     left: 50%;
     transform: translate(-50%);
-    text-align: center;
-   
+    text-align: center;  
 }
-
-
-#energyApp button {
-    width: 8em;
-}
-
 
 #energyApp .text {
     width: 35em;
     max-width: 98%;
-    margin: auto;
 }
 
 #energyApp .box-content {
