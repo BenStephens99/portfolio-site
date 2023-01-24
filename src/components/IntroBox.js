@@ -17,7 +17,11 @@ function IntroBox(props) {
                             any questions or would like to discuss working together. </p>
                     </div>
                 </div>
-                <button>More about me</button>
+                <div className="links">
+                    <button>More about me</button>
+                    <button>View my Work</button>
+                </div>
+
 
             </div>
         </div>

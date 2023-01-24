@@ -27,7 +27,6 @@ body {
 }
 
 .App {
-  font-size: 2.4vh;
   font-family: 'Plus Jakarta Sans', sans-serif;
   scroll-behavior: smooth;
 }
@@ -235,40 +234,25 @@ main.light {
 }
 
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
 
-@media screen and (max-width: 980px) {
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
   .App {
-    font-size: 18px;
+    font-size: 1.1em ;
   }
 }
 
-@media (orientation: portrait) and (min-height: 500px) {
-  main {
-    width: 100vw;
-    left: 0;
-    right: 0;
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1701px) {
+  .App {
+    font-size: 1.25em ;
   }
-
-  @media screen and (max-width: 600px) {
-    main {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .box-content {
-      padding: 2em;
-      margin: auto;
-    }
-  }
-
-  .title-large {
-    font-size: 2.5em;
-  }
-  
-  .title-medium {
-    font-size: 1.8em;
-  }
-
-
 }

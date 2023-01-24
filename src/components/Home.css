@@ -2,7 +2,7 @@
     position: relative;
     display: flex;
     width: 75%;
-    height: 75%;
+    min-height: 75%;
     z-index: 9;
     animation-name: slide-intro;
     justify-content: space-between;
@@ -44,7 +44,7 @@
     z-index: 8;
     top: 0;
     right: 0;
-    height: 85%;
+    min-height: 85%;
     text-align: right;
     justify-content: right;
     display: flex;

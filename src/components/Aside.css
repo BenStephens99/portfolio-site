@@ -81,10 +81,3 @@ aside .socials {
 }
 
 
-@media (orientation: portrait) and (min-height: 500px) {
- 
-  aside {
-    left: calc(-5px - var(--asideWidth));
-  }
-  
-}

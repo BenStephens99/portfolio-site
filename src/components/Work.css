@@ -9,7 +9,7 @@
 
 #work .title-medium {
     text-align: center;
-    padding-bottom: 20em;
+    padding-bottom: 1em;
 }
 
 #work .box-content {
@@ -22,9 +22,9 @@
     position: relative;
     display: grid;
     padding-top: 1em;
-    grid-template-columns: 20em 20em;
-    padding-bottom: 10em;
-    gap: 8em;
+    grid-template-columns: 25em 25em;
+    padding-bottom: 20em;
+    gap: 10em;
 }
 
 .portfolio-card {
@@ -40,7 +40,7 @@
 }
 
 .portfolio-card:nth-child(even) {
-    top: 10em;
+    top: 20em;
     z-index: inherit;
 }
 
