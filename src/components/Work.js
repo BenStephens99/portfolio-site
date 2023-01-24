@@ -63,7 +63,11 @@ function Work() {
                             />
 
                             <PortfolioCard
-                                title="University Works" />
+                                title="University Works" buttonText="Coming Soon"/>
+
+                                
+                            <PortfolioCard
+                                title="Personal Projects" buttonText="Coming Soon"/>
                         </div>
                     </div>
                 </div>

@@ -3,6 +3,7 @@ import './Aside.css';
 import profilePic from '../images/me-grad-small.jpg'
 import linkedIn from '../images/linkedIn.svg'
 import email from '../images/email.svg'
+import github from '../images/github.svg'
 import ThemeToggler from "./ThemeToggler";
 import { Link } from "react-router-dom";
 import { HomeDelay } from "../App";
@@ -42,8 +43,10 @@ function Aside() {
                 <li><Link>Contact</Link></li>
             </nav>
             <div className="socials">
-                <a href="https://www.linkedin.com/in/stephens-ben/" target="_blank" rel="noreferrer"><img src={linkedIn} alt="LinkedIn" /></a>
-                <a href="mailto:ben@stephens.uk.net"><img src={email} alt="Email" /></a>
+                <a className="svg" href="https://www.linkedin.com/in/stephens-ben/" target="_blank" rel="noreferrer"><img src={linkedIn} alt="LinkedIn" /></a>
+                <a className="svg" href="mailto:ben@stephens.uk.net"><img src={email} alt="Email" /></a>
+                <a className="svg" href="https://github.com/BenStephens99" target="_blank" rel="noreferrer"><img src={github} alt="LinkedIn" /></a>
+
             </div>
         </aside>
     )

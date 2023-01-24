@@ -86,6 +86,10 @@ li {
   background-color: black;
 }
 
+.light .svg {
+  filter: invert(23%) sepia(2%) saturate(4037%) hue-rotate(321deg) brightness(89%) contrast(74%);
+}
+
 #mainContainer {
   position: absolute;
   top: var(--headerHeight);

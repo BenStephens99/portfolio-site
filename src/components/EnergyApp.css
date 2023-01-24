@@ -5,6 +5,8 @@
     width: 100%;
     left: 50%;
     transform: translate(-50%);
+    text-align: center;
+   
 }
 
 
@@ -12,77 +14,21 @@
     width: 8em;
 }
 
-.appDemo {
-    width: 50em;
-    height: 40em;
-    border: 1px solid black;
-    margin: 5em auto;
-    border-radius: 0.5em;
-    overflow: hidden;
-    display: grid;
-    grid-template-columns: 10em auto;
-    grid-template-rows: 2em auto;
+
+#energyApp .text {
+    width: 35em;
+    max-width: 98%;
+    margin: auto;
 }
 
- .demo-header {
-    background-color: white;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    display: flex;
-    align-items: center;
-    padding: 1em;
-    font-size: 0.8em;
-}
-.demo-navigation {
-    background-color: rgb(67, 66, 66);
-    color: white;
-}
-
-.demo-navigation ul{
-    width: 100%;
+#energyApp .box-content {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    justify-content: center;
+    align-items: center;
+    gap: 3em;
 }
 
-.demo-navigation li {
-    border-left: 0.3em solid rgb(67, 66, 66);
-    margin: 1em 0;
+#energyApp .svg img{
+    width: 5em;
 }
 
-.demo-navigation li:hover {
-    cursor: pointer;
-}
-
-.demo-navigation .selected {
-    border-left: 0.3em solid red;
-    font-weight: bold;
-}
-
-.demo-main {
-    background-color: rgb(57, 57, 57);
-    overflow-y: scroll;
-}
-
-.demo-main img {
-    width: 100%;
-}
-
-.demo-houses-list {
-    font-size: 0.8em;
-    opacity: 0;
-    margin-top: 100px;
-    transition: 1000ms;
-}
-
-.demo-houses-list.selected {
-    opacity: 1;
-    margin-top: 0;
-    border-left: none;
-    font-weight: 100;
-}
-
-.demo-houses-list.selected li {
-    border-left: 0.3em solid rgb(67, 66, 66);
-}
