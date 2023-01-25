@@ -1,6 +1,6 @@
 #intro {
     position: relative;
-    display: flex;
+    display: inline-flex;
     width: 75%;
     min-height: 75%;
     z-index: 9;
@@ -24,7 +24,8 @@
 
 #intro .box-content {
     max-width: 37em;
-    display: grid;
+    display: inline-flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 

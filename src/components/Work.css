@@ -57,8 +57,8 @@
     display: grid;
     padding-top: 1em;
     grid-template-columns: 50em;
-    grid-auto-rows: 60vh;
-    gap: 10em;
+    grid-auto-rows: 40em;
+    gap: 5em;
     justify-content: center;
 }
 
@@ -68,21 +68,17 @@
     opacity: 0;
     display: grid;
     grid-template-columns: 40% 60%;
-    grid-template-rows: 30% 70%;
+    grid-template-rows: 20% 80%;
     padding: 3em;
-    border-bottom: 1px solid var(--backgroundColor);
-
 }
 
-.portfolio-card:nth-child(1) {
-    border-top: 1px solid var(--backgroundColor);
-}
 
 .portfolio-card img {
     grid-column-start: 1;
     grid-column-end: 3;
-    width: 100%;
     margin: auto;
+    max-height: 100%;
+    max-width: 100%;
     
 }
 

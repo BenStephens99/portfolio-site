@@ -197,7 +197,7 @@ main.light {
 
 
 .underline-on-hover {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   height: 2em;
   gap: 0.5em;

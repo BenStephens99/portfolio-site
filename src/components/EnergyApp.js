@@ -56,9 +56,9 @@ function EnergyApp() {
 
                         <p>Developed using the Electron framework to allow cross platform compatibility.</p>
 
-                        <p>Take a look at this project on github</p>
+                        <p>Take a look at this project on github:</p>
 
-                        <a className="svg" href="https://github.com/BenStephens99/OctopusAppV2" target="_blank" rel="noreferrer"><img src={github} alt="LinkedIn" /></a>
+                        <a className="svg" href="https://github.com/BenStephens99/OctopusAppV2" target="_blank" rel="noreferrer"><img src={github} alt="Ben/Github/EnergyApp" /></a>
 
                     </div>
 
