@@ -5,9 +5,9 @@ import Footer from "./Footer";
 import './Home.css';
 import { MainRefContext } from "../App";
 
+
 const Home = (props) => {
     const mainRef = React.useContext(MainRefContext);
-    
 
     return (
         <main ref={mainRef} className="home">

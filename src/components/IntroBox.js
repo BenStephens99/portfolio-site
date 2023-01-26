@@ -1,7 +1,24 @@
 import React from "react";
 import arrow from '../images/arrow.svg'
+import { scrollIntoViewWithOffset } from "./functions";
+import { wait } from "./functions";
+import { useNavigate } from "react-router-dom";
+import { MainRefContext } from "../App";
+
 
 function IntroBox(props) {
+
+    const navigate = useNavigate();
+    const mainRef = React.useContext(MainRefContext);
+
+    async function goToPage(des, delay) {
+        scrollIntoViewWithOffset('mainContainer', 100)
+        mainRef.current.classList.remove('show-card');
+        mainRef.current.classList.add('hide-card');
+        await wait(delay);
+        navigate(des);
+    }
+
     return (
         <div id="intro" className={`box ${props.delay}`}>
             <div className="box-content">
@@ -17,13 +34,13 @@ function IntroBox(props) {
                             Please feel free to take a look around and do not hesitate to contact me if you have
                             any questions or would like to discuss working together. </p>
                     </div>
-                    <div className="underline-on-hover" onClick={props.click}>
+                    <div className="underline-on-hover" onClick={() => goToPage('./about', 1000)}>
                         <div>More about me</div>
                         <div><img className="svg" src={arrow} alt="" /></div>
                     </div>
                 </div>
                 <div className="links">
-                    <button>View My Work</button>
+                    <button onClick={() => goToPage('/work', 1000)}>View My Work</button>
                 </div>
 
 

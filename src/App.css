@@ -199,14 +199,16 @@ main.light {
 .underline-on-hover {
   display: inline-flex;
   align-items: center;
-  height: 2em;
+  height: auto;
   gap: 0.5em;
+  padding-bottom: 0.5em;
   font-weight: bold;
   position: relative;
 }
 
 .underline-on-hover img {
   height: 2em;
+  margin: auto;
 }
 
 .underline-on-hover:after {
@@ -215,7 +217,7 @@ main.light {
   height: 3px;
   width: 0;
   left: 0;
-  bottom: -0.5em;
+  bottom: 0.5em;
   transition: 0.7s;
   background-color: var(--fontColor)
 }
