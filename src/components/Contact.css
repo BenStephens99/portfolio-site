@@ -1,0 +1,97 @@
+main.contact {
+    height: 100%;
+}
+
+.contact .box {
+    min-height: 100%;
+}
+
+.contact .box-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2em;
+    min-height: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 40em;
+    box-shadow: 0 0 3px var(--fontColor);
+    padding: 1em;
+}
+
+form fieldset {
+    display: grid;
+    grid-template-columns: calc(50% - 0.5em) calc(50% - 0.5em);
+    grid-auto-rows: auto;
+    border: none;
+    gap: 1em;
+    margin: 1em 0;
+}
+
+form input {
+    width: 100%;
+    font-size: inherit;
+    padding: 0.5em;
+    box-sizing: border-box;
+    border: none;
+    background-color: var(--backgroundColor);
+    color: var(--fontColor);
+    box-shadow: 0 0 3px var(--fontColor);
+}
+
+form textarea {
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    width: 100%;
+    padding: none;
+    font-size: inherit;
+    font: inherit;
+    box-sizing: border-box;
+    padding: 0.5em;
+    border: none;
+    background-color: var(--backgroundColor);
+    color: var(--fontColor);
+    box-shadow: 0 0 3px var(--fontColor);
+}
+
+form button {
+    display: inline-flex;
+    margin: auto;
+}
+
+.linkedin-form {
+    width: 40em;
+    box-shadow: 0 0 3px var(--fontColor);
+    padding: 1em;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.linkedin-form .underline-on-hover {
+    display: inline-flex;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--fontColor);
+    opacity: 1;
+    /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: var(--fontColor);
+
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: var(--fontColor);
+
+}
+

@@ -5,7 +5,7 @@ import arrow from '../images/arrow.svg'
 function PortfolioCard(props) {
     const { ref, inView } = useInView({
         /* Optional options */
-        threshold: 0.4,
+        threshold: 0.2,
     });
 
     return (

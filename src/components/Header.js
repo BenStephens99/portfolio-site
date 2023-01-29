@@ -1,6 +1,5 @@
 import React from "react";
 import './Header.css';
-import ContactButton from "./ContactButton";
 import { HomeDelay } from "../App";
 import { useNavigate } from "react-router-dom";
 import { MainRefContext } from "../App";
@@ -15,20 +14,20 @@ function Header () {
     const navigate = useNavigate();
     const mainRef = React.useContext(MainRefContext);
 
-    async function goToHome() {
+    async function go(des, time) {
         delay.turnOffDelay();
-        if (location.pathname !== '/') {
+        if (location.pathname !== des) {
             scrollIntoViewWithOffset('mainContainer', 100)
             mainRef.current.classList.remove('show-card')
             mainRef.current.classList.add('hide-card');
-            await wait(1000);
-            navigate('/');
+            await wait(time);
+            navigate(des);
         }
     }
     return (
         <header id="header">
-            <h3  onClick={goToHome}>Ben Stephens</h3>
-            <ContactButton />
+            <h3  onClick={() => go('/', 1000)}>Ben Stephens</h3>
+            <button onClick={() => go('/contact', 1000)} className="contact-button">CONTACT</button>
         </header>
     )
 }

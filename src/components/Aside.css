@@ -30,6 +30,11 @@ aside {
     left: 0;
     width: 30%
   }
+
+  100% {
+    left: 0;
+    width: var(--asideWidth);
+  }
 }
 
 aside nav {
@@ -81,3 +86,18 @@ aside .socials {
 }
 
 
+@media only screen and (max-width: 600px){
+
+aside {
+  left: calc(0px - var(--asideWidth));
+}
+
+@keyframes grow-aside {
+  50% {
+    left: 0;
+    width: 100vw;
+  }
+}
+
+
+}

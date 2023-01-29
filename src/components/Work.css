@@ -17,7 +17,7 @@
     display: flex;
     flex-direction: column;
     padding: 0;
-    gap: 5em;
+    gap: 1em;
 }
 
 .portfolio-intro {
@@ -55,11 +55,10 @@
 .portfolio-cards {
     position: relative;
     display: grid;
-    padding-top: 1em;
-    grid-template-columns: 50em;
-    grid-auto-rows: 40em;
+    grid-template-columns: 100%;
+    grid-auto-rows: calc(90vh - var(--headerHeight));
     gap: 5em;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .portfolio-card {
@@ -68,9 +67,11 @@
     opacity: 0;
     display: grid;
     grid-template-columns: 40% 60%;
-    grid-template-rows: 20% 80%;
-    padding: 3em;
-    gap: 1em;
+    grid-template-rows: auto 80%;
+    row-gap: 3em;
+    max-width: 45em;
+    margin: 0 auto;
+    padding: 2em;
 }
 
 
@@ -105,7 +106,7 @@
     }
 
     to {
-        left: 40vh;
+        left: 60vh;
         opacity: 0;
     }
 }
@@ -120,7 +121,7 @@
 
 @keyframes fade-portfolio-card {
     from {
-        left: 40vh;
+        left: 60vh;
         opacity: 0;
     }
     

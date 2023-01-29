@@ -1,0 +1,64 @@
+.aboutMe .box {
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.aboutMe .box-content {
+    display: grid; 
+    grid-template-columns: 50% 50%;
+    grid-auto-rows: auto;
+    column-gap: 5em;
+    row-gap: 1em;
+    justify-content: center;
+    max-width: 60em;
+}
+
+
+.qualifications {
+    display: flex;
+    flex-direction: column;
+    vertical-align: top;
+    gap: 1em;
+    position: relative;
+}
+
+.profile-pic {
+    display: flex;
+    flex-direction: column;
+    border-radius: 2em;
+    width: 40%;
+    min-width: 10em;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    box-shadow: 0 0 3px var(--fontColor);
+}
+
+.profile-pic img {
+    width: 100%;
+}
+
+.qualification {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 3px var(--fontColor);
+    padding: 1em;
+    border-radius: 2em;
+    gap: 0.2em;
+}
+
+.qualification .grade {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8em;
+}
+
+.qualification ul {
+    padding-top: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1em;
+}

@@ -1,7 +1,0 @@
-Welcome to my portfolio website! My name is [Your name] and I am a recent graduate from the University of Brighton with a first-class degree in Computer Science. I am excited to begin my journey as a Front-End Developer and am eager to apply my skills and knowledge to create engaging and user-friendly websites and web applications.
-
-Throughout my time at university, I have had the opportunity to work on a variety of projects, both individually and as part of a team. These projects have allowed me to develop my skills in HTML, CSS, JavaScript, and other front-end technologies. I am also well-versed in web design principles and user experience design, which I believe are crucial for creating websites that are both visually appealing and easy to navigate.
-
-On my portfolio website, you will find a selection of my most recent projects, along with detailed explanations of the technologies and techniques I used to create them. I am confident that my skills and experience make me a strong candidate for any Front-End Developer position and I look forward to the opportunity to work with a team of talented developers to create innovative and engaging websites and web applications.
-
-Please feel free to take a look around and do not hesitate to contact me if you have any questions or would like to discuss working together.
