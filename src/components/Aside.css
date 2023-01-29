@@ -17,8 +17,14 @@ aside {
   animation-timing-function: ease;
 }
 
-.light aside {
-  background-color: var(--backgroundColor);
+aside {
+  background-color: var(--backgroundColor); 
+  color: var(--fontColor);
+}
+
+.dark aside {
+  box-shadow: none;
+  border-right: 1px solid var(--fontColor);
 }
 
 @keyframes grow-aside {
@@ -78,18 +84,12 @@ aside .socials {
 
 }
 
-.profile-image {
-  width: 60%;
-  height: auto;
-  margin: 0 auto;
-  margin-top: 1em;
-}
-
 
 @media only screen and (max-width: 600px){
 
 aside {
-  left: calc(0px - var(--asideWidth));
+  left: calc(-10px - var(--asideWidth)); 
+  transition: 1s;
 }
 
 @keyframes grow-aside {
@@ -99,5 +99,22 @@ aside {
   }
 }
 
+aside.open {
+  width: 100vw;
+  left: 0;
+}
+
+aside.closed {
+  width: 0px;
+  left: calc(-10px - var(--asideWidth));
+}
+
+aside nav {
+  font-size: 1.5em;
+}
+
+aside .socials {
+  font-size: 1.2em;
+}
 
 }

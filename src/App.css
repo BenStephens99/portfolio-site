@@ -31,11 +31,11 @@ body {
   scroll-behavior: smooth;
 }
 
-.App.light {
+.App {
   background-color: var(--fontColor);
 }
 
-.light main {
+main {
   background-color: var(--fontColor);
 }
 
@@ -76,18 +76,12 @@ li {
   list-style: none;
 }
 
-.light {
-  background-color: var(--backgroundColor);
-  color: var(--fontColor);
-}
-
-.dark {
-  color: white;
-  background-color: black;
-}
-
 .light .svg {
   filter: invert(23%) sepia(2%) saturate(4037%) hue-rotate(321deg) brightness(89%) contrast(74%);
+}
+
+.dark .svg {
+  filter: invert(87%) sepia(3%) saturate(2980%) hue-rotate(328deg) brightness(92%) contrast(104%);
 }
 
 #mainContainer {
@@ -99,6 +93,7 @@ li {
   background-color: inherit;
   overflow-y: scroll;
   overflow-x: hidden;
+  background-color: var(--fontColor);
 }
 
 main {
@@ -110,16 +105,26 @@ main {
   height: 100%;
   left: 50%;
   transform: translate(-50%);
+  color: var(--fontColor);
 }
 
-main.light {
+.dark {
+  box-shadow: none;
+  border: 1px solid var(--backgroundColor);
+}
+
+.dark main {
+  background-color: var(--backgroundColor);
+}
+
+.dark #mainContainer {
   background-color: var(--backgroundColor);
 }
 
 .title-large {
   font-size: 3.5em;
   line-height: 90%;
-
+  color: var(--fontColor);
 }
 
 .title-large.shadow {
@@ -127,14 +132,22 @@ main.light {
   text-shadow: 2px 2px 8px var(--fontColor);
 }
 
+
+
 .title-medium {
   font-size: 2.5em;
   line-height: 98%;
+  color: var(--fontColor);
 }
 
 .title-medium.shadow {
   color: var(--backgroundColor);
   text-shadow: 2px 2px 8px var(--fontColor);
+}
+
+.dark .shadow {
+  text-shadow: none;
+  color: var(--fontColor);
 }
 
 .text p {
@@ -145,7 +158,12 @@ main.light {
   box-shadow: 0 0 3px var(--fontColor);
 }
 
-.light .box {
+.dark .box {
+  box-shadow: none;
+  border: 1px solid var(--fontColor);
+}
+
+.box {
   background-color: var(--backgroundColor);
 }
 
@@ -302,15 +320,26 @@ main.light {
   }
 
   #mainContainer {
-    position: absolute;
+    position: relative;
     top: var(--headerHeight);
-    left: 0;
     width: 100vw;
-    height: auto;
+    height: auto ;
+    left: 0;
   }
 
   main {
+    position: relative;
+    background-color: inherit;
+    top: 0em;
+    z-index: 6;
+    width: 100%;
     height: auto;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  .box-content {
+    padding: 1.5em;
   }
 }
 

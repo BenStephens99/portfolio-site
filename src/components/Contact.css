@@ -22,6 +22,11 @@ form {
     padding: 1em;
 }
 
+.dark form {
+    box-shadow: none;
+    border: 1px solid var(--fontColor);
+}
+
 form fieldset {
     display: grid;
     grid-template-columns: calc(50% - 0.5em) calc(50% - 0.5em);
@@ -42,6 +47,11 @@ form input {
     box-shadow: 0 0 3px var(--fontColor);
 }
 
+.dark form input {
+    box-shadow: none;
+    border: 1px solid var(--fontColor);
+}
+
 form textarea {
     grid-row-start: 1;
     grid-row-end: 4;
@@ -58,9 +68,15 @@ form textarea {
     box-shadow: 0 0 3px var(--fontColor);
 }
 
+.dark form textarea {
+    box-shadow: none;
+    border: 1px solid var(--fontColor);
+}
+
 form button {
     display: inline-flex;
     margin: auto;
+    padding: 1.5em 6em;
 }
 
 .linkedin-form {
@@ -70,6 +86,11 @@ form button {
     display: inline-flex;
     flex-direction: column;
     gap: 1em;
+}
+
+.dark .linkedin-form {
+    box-shadow: none;
+    border: 1px solid var(--fontColor);
 }
 
 .linkedin-form .underline-on-hover {
@@ -92,6 +113,29 @@ form button {
 ::-ms-input-placeholder {
     /* Microsoft Edge */
     color: var(--fontColor);
+}
 
+@media screen and (max-width: 600px) {
+    .linkedin-form {
+        width: auto;
+    }
+    
+    form {
+        width: 90%;
+        padding: 1em;
+    }
+    
+    form fieldset {
+        grid-template-columns: 100%;
+    }
+
+    
+form textarea {
+    grid-row-start: auto;
+    grid-row-end: auto;
+    grid-column-start: auto;
+    height: 10em;
+}
+    
 }
 

@@ -13,10 +13,6 @@
     background-color: var(--fontColor);
   }
   
-  .dark .outer-toggle-button {
-    background-color: rgb(141, 2, 2);
-  }
-  
   .inner-toggle-button {
     height: 100%;
     width: 1em;
@@ -25,11 +21,22 @@
     transition: 0.5s ease;
     left: 0;
     background-color: var(--backgroundColor);
-    box-shadow: 0 0 5px rgb(102, 102, 102);
+    box-shadow: 0 0 5px var(--fontColor);
+  }
+
+  .dark .inner-toggle-button {
+    box-shadow: none;
+    border: 1px solid var(--fontColor);
   }
   
   .dark .inner-toggle-button {
     left: calc(100% - 1em);
-    background-color: white;
   }
   
+
+  @media screen and (max-width: 600px) {
+    .theme-toggle-button {
+      width: 6em;
+      font-size: 2em;
+    }
+  }

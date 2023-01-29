@@ -16,8 +16,18 @@ header {
   animation-timing-function: ease-in-out;
 }
 
-.light header {
+header {
   background-color: var(--backgroundColor);
+  color: var(--fontColor);
+}
+
+.dark header {
+  box-shadow: none;
+  border-bottom: 1px solid var(--fontColor);
+}
+
+.menu-button{
+  display: none;
 }
 
 .contact-button {
@@ -63,4 +73,23 @@ header h3 {
 
 header h3:hover {
   cursor: pointer;
+}
+
+
+@media screen and (max-width: 600px) {
+  header h3 {
+    margin-left: 1em;
+  }
+
+  .contact-button {
+    display: none;
+  }
+
+  .menu-button {
+    display: block;
+    height: 100%;
+    width: 10em;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
 }

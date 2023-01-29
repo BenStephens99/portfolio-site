@@ -39,10 +39,6 @@ function About() {
                                 <img src={me} alt="Ben"/>
                             </div>
 
-                            <div className="cv">
-                                <a href="./cv.pdf" target="_blank">CV</a>
-                            </div>
-
                             <Qualification
                                 title="Front-End Developer Professional Certificate"
                                 issuer="Meta"
