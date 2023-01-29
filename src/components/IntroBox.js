@@ -4,14 +4,17 @@ import { scrollIntoViewWithOffset } from "./functions";
 import { wait } from "./functions";
 import { useNavigate } from "react-router-dom";
 import { MainRefContext } from "../App";
+import { HomeDelay } from "../App";
 
 
 function IntroBox(props) {
 
     const navigate = useNavigate();
     const mainRef = React.useContext(MainRefContext);
+    const homeDelay = React.useContext(HomeDelay);
 
     async function goToPage(des, delay) {
+        homeDelay.turnOffDelay();
         scrollIntoViewWithOffset('mainContainer', 100)
         mainRef.current.classList.remove('show-card');
         mainRef.current.classList.add('hide-card');

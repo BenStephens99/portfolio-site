@@ -55,7 +55,6 @@ function App() {
               <Header />
               <Aside />
             </MenuContext.Provider>
-          </HomeDelay.Provider>
           <div id='mainContainer'>
             <Routes>
               <Route path="/" element={<Home name="home" delay={delay} />}></Route>
@@ -65,6 +64,7 @@ function App() {
               <Route path='/contact' element={<Contact />}></Route>
             </Routes>
           </div>
+          </HomeDelay.Provider>
         </MainRefContext.Provider>
 
       </div>
