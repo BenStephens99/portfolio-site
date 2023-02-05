@@ -4,10 +4,12 @@ import PortfolioCard from "./PortfolioCard";
 import octopusLaptop from "../images/octopusLaptop.png"
 import jtreat from "../images/JTreat.png";
 import cyber from "../images/cyber-assure.png"
+import universityPortfolioImage from '../images/NPCSystem.png'
 import { useNavigate } from "react-router-dom";
 import { wait } from "./functions";
 import { MainRefContext } from "../App";
 import { scrollIntoViewWithOffset } from "./functions";
+
 
 
 function Work() {
@@ -18,7 +20,7 @@ function Work() {
 
     const arrowPressed = () => {
         portfolioCardsRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
-      }
+    }
 
     async function goToPage(des, delay) {
         scrollIntoViewWithOffset('mainContainer', 100)
@@ -53,7 +55,7 @@ function Work() {
                             type="Desktop Application"
                             image={octopusLaptop}
                             description={<>
-                                <p>A cross platform desktop application for monitoring and displaying real time energy consumption
+                                <p>A cross-platform desktop application for monitoring and displaying real time energy consumption
                                     data from an energy providers REST API.
                                 </p>
                             </>}
@@ -76,15 +78,28 @@ function Work() {
                         <PortfolioCard
                             title="Cyber-Assure"
                             type="Website"
-                            image={cyber} buttonText="View Website"
+                            description={<p>A simple but clear, and responsive site for a cyber security company.</p>}
+                            image={cyber}
+                            buttonText="View Website"
                             click={() => window.open('https://cyber-assure.co.uk/', '_blank').focus()}
+                        />
+
+                        <PortfolioCard
+                            title="University Works"
+                            type="Portfolio"
+                            description={<>
+                                <p>A selection of work completed during my time at university.
+                                </p>
+                            </>}
+                            buttonText="Vist University Portfolio"
+                            image={universityPortfolioImage}
+                            click={() => window.open('https://ben.stephens.uk.net/old/portfolio.html', '_blank')}
                         />
 
                         <PortfolioCard
                             title="Personal Projects" buttonText="Coming Soon" />
 
-                        <PortfolioCard
-                            title="University Works" buttonText="Coming Soon" />
+
                     </div>
                 </div>
             </div>
