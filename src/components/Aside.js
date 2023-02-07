@@ -22,7 +22,7 @@ function Aside() {
     const navigate = useNavigate();
     const location = useLocation();
 
-    async function goToPage(des, delay) {
+    async function goToPage(des) {
         homeDelay.turnOffDelay();
         if (menuState.menuOpen === "open") {
             menuState.toggleMenu();
@@ -31,7 +31,7 @@ function Aside() {
             scrollIntoViewWithOffset('mainContainer', 100)
             mainRef.current.classList.remove('show-card')
             mainRef.current.classList.add('hide-card');
-            await wait(delay);
+            await wait(1000);
             navigate(des);
         }
     }
@@ -40,10 +40,10 @@ function Aside() {
         <aside id="aside" className={menuState.menuOpen}>
             <ThemeToggler />
             <nav>
-                <li onClick={() => goToPage('/', 1000)}>Home</li>
-                <li onClick={() => goToPage('/work', 1000)}>Portfolio</li>
-                <li onClick={() => goToPage('/about', 1000)}>About</li>
-                <li onClick={() => goToPage('/contact', 1000)}>Contact</li>
+                <li onClick={() => goToPage('/')}>Home</li>
+                <li onClick={() => goToPage('/work')}>Portfolio</li>
+                <li onClick={() => goToPage('/about')}>About</li>
+                <li onClick={() => goToPage('/contact')}>Contact</li>
             </nav>
             <div className="socials">
                 <a className="svg" href="https://www.linkedin.com/in/stephens-ben/" target="_blank" rel="noreferrer"><img src={linkedIn} alt="LinkedIn" /></a>

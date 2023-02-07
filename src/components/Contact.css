@@ -79,6 +79,8 @@ form button {
     padding: 1.5em 6em;
 }
 
+
+
 .linkedin-form {
     width: 40em;
     box-shadow: 0 0 3px var(--fontColor);
@@ -86,6 +88,7 @@ form button {
     display: inline-flex;
     flex-direction: column;
     gap: 1em;
+    text-align: center;
 }
 
 .dark .linkedin-form {

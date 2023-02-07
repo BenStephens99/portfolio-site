@@ -11,6 +11,11 @@
     grid-template-rows: 2em auto;
 }
 
+.dark .appDemo {
+    box-shadow: none;
+    border: 1px solid var(--fontColor);
+}
+
  .demo-header {
     background-color: var(--backgroundColor);
     color: var(--fontColor);
