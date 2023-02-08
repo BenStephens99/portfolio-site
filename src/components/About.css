@@ -7,14 +7,14 @@
 
 .aboutMe .box-content {
     display: grid; 
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
     grid-auto-rows: auto;
     column-gap: 5em;
     row-gap: 1em;
     justify-content: center;
-    max-width: 60em;
+    align-items: center;
+    max-width: 70em;
 }
-
 
 .qualifications {
     display: flex;

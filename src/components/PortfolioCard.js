@@ -5,7 +5,7 @@ import arrow from '../images/arrow.svg'
 function PortfolioCard(props) {
     const { ref, inView } = useInView({
         /* Optional options */
-        threshold: 0.2,
+        //threshold: 0.2,
     });
 
     return (
@@ -14,13 +14,13 @@ function PortfolioCard(props) {
                 <h3>{props.title}</h3>
                 <p>{props.type}</p>
             </div>
-            <div>
-                <div>{props.description}</div>
-                <li className="underline-on-hover" onClick={props.click}>
-                    <div> {props.buttonText} </div>
-                    <div><img className="svg" src={arrow} alt="" /></div>
-                </li>
+            <div>{props.description}</div>
+
+            <div className="underline-on-hover" onClick={props.click}>
+                <div> {props.buttonText} </div>
+                <img className="svg" src={arrow} alt="" />
             </div>
+
             <img src={props.image} alt="" />
         </div>
     )

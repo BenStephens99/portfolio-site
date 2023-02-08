@@ -120,25 +120,23 @@ form button {
 
 @media screen and (max-width: 600px) {
     .linkedin-form {
-        width: auto;
+        width: 90%;
     }
-    
+
     form {
         width: 90%;
         padding: 1em;
     }
-    
+
     form fieldset {
         grid-template-columns: 100%;
     }
 
-    
-form textarea {
-    grid-row-start: auto;
-    grid-row-end: auto;
-    grid-column-start: auto;
-    height: 10em;
-}
-    
-}
+    form textarea {
+        grid-row-start: auto;
+        grid-row-end: auto;
+        grid-column-start: auto;
+        height: 10em;
+    }
 
+}

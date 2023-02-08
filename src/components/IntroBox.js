@@ -39,7 +39,7 @@ function IntroBox(props) {
                     </div>
                     <div className="underline-on-hover" onClick={() => goToPage('./about', 1000)}>
                         <div>More about me</div>
-                        <div><img className="svg" src={arrow} alt="" /></div>
+                        <img className="svg" src={arrow} alt="" />
                     </div>
                 </div>
                 <div className="links">

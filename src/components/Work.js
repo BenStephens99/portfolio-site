@@ -97,9 +97,14 @@ function Work() {
                         />
 
                         <PortfolioCard
-                            title="Personal Projects" buttonText="Coming Soon" />
-
-
+                            title="Personal Projects"
+                            type="Portfolio"
+                            description={<>
+                                <p>A selection personal projects.
+                                </p>
+                            </>}
+                            buttonText="Coming Soon"     
+                        />
                     </div>
                 </div>
             </div>

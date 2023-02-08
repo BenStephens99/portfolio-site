@@ -30,7 +30,7 @@ function Contact() {
                         <h2>Find me on LinkedIn</h2>
                         <a  href="https://www.linkedin.com/in/stephens-ben/" target="_blank" rel="noreferrer"><li className="underline-on-hover">
                             <div>My profile</div>
-                            <div><img className="svg" src={arrow} alt="" /></div>
+                            <img className="svg" src={arrow} alt="" />
                         </li> </a>
                     </div>  
 
