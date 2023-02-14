@@ -3,6 +3,7 @@ import { MainRefContext } from "../App";
 import './About.css';
 import Qualification from "./Qualification";
 import me from '../images/me.jpeg'
+import arrow from '../images/arrow.svg'
 
 
 function About() {
@@ -14,7 +15,7 @@ function About() {
                 <div className='box'>
                     <div className="box-content">
                         <div className="text">
-                        <h2 className="title-medium">About me</h2>
+                            <h2 className="title-medium">About me</h2>
                             <p>My name is Ben and I am a recent graduate from the University of Brighton with a first-class
                                 degree in Computer Science. I am excited to begin my journey as a Front-End Developer and
                                 am eager to apply my skills and knowledge to create engaging and user-friendly websites
@@ -31,27 +32,36 @@ function About() {
                                 I am confident that my skills and experience make me a strong candidate for any Front-End Developer
                                 position and I look forward to the opportunity to work with a team of talented developers to create
                                 innovative and engaging websites and web applications.</p>
+
+
+                            <a href="./cv.pdf" target="_blank" rel="noreferrer">
+                                <div className="underline-on-hover">
+                                    <div>View CV</div>
+                                    <img className="svg" src={arrow} alt="" />
+                                </div>
+                            </a>
+
                         </div>
 
                         <div className="qualifications">
 
                             <div className="profile-pic">
-                                <img src={me} alt="Ben"/>
+                                <img src={me} alt="Ben" />
                             </div>
 
                             <Qualification
                                 title="Front-End Developer Professional Certificate"
                                 issuer="Meta"
                                 time="January 2023"
-                                bullets={["Link to certificate"]}
                             />
 
                             <Qualification
                                 title="Computer Science for Games BSc Hons"
                                 issuer="University of Brighton"
                                 time="June 2022"
-                                bullets={["First Class Honours"]}
                             />
+
+
 
                         </div>
 
