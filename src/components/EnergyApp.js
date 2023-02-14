@@ -35,7 +35,7 @@ function EnergyApp() {
                         </div>
 
                         <div className="text">
-                            <p>I devleoped this application to allow users to view energy consumption data and prices for
+                            <p>I developed this application to allow users to view energy consumption data and prices for
                                 specified properties from an energy provider's REST API. The data is displayed in a user-friendly
                                 format using graphical representations and tables.</p>
 

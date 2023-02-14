@@ -112,6 +112,10 @@ footer {
   background-color: var(--backgroundColor);
 }
 
+footer a {
+  text-decoration: underline;
+}
+
 @keyframes slide-from-bottom {
   from {
     bottom: -60%;

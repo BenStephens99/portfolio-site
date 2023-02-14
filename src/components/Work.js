@@ -5,6 +5,7 @@ import octopusLaptop from "../images/octopusLaptop.png"
 import jtreat from "../images/JTreat.png";
 import cyber from "../images/cyber-assure.png"
 import universityPortfolioImage from '../images/NPCSystem.png'
+import piapp from '../images/piapp.png'
 import { useNavigate } from "react-router-dom";
 import { wait } from "./functions";
 import { MainRefContext } from "../App";
@@ -62,6 +63,21 @@ function Work() {
                             buttonText="View Project"
                             click={() => goToPage('/work/energy-app', 1000)}
                         />
+
+
+                        <PortfolioCard
+                            title="Home Device Controller"
+                            type="Personal Project"
+                            description={<>
+                                <p>Node.js Application to control home devices with asyncronous javascript fetch requests to
+                                    smart plugs and speakers deployed on a raspberry pi.
+                                </p>
+                            </>}
+                            buttonText="Vist GitHub Repo"
+                            image={piapp}
+                            click={() => window.open('https://github.com/BenStephens99/pi-app-v2', '_blank')}
+                        />
+                        
                         <PortfolioCard
                             title="JTreat"
                             type="Website"
@@ -75,6 +91,7 @@ function Work() {
                             click={() => window.open('https://www.jtreat.co.uk/', '_blank').focus()}
 
                         />
+
                         <PortfolioCard
                             title="Cyber-Assure"
                             type="Website"
@@ -94,16 +111,6 @@ function Work() {
                             buttonText="Vist University Portfolio"
                             image={universityPortfolioImage}
                             click={() => window.open('https://ben.stephens.uk.net/old/portfolio.html', '_blank')}
-                        />
-
-                        <PortfolioCard
-                            title="Personal Projects"
-                            type="Portfolio"
-                            description={<>
-                                <p>A selection personal projects.
-                                </p>
-                            </>}
-                            buttonText="Coming Soon"     
                         />
                     </div>
                 </div>
