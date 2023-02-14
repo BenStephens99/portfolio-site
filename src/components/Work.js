@@ -66,19 +66,6 @@ function Work() {
 
 
                         <PortfolioCard
-                            title="Home Device Controller"
-                            type="Personal Project"
-                            description={<>
-                                <p>Node.js Application to control home devices with asyncronous javascript fetch requests to
-                                    smart plugs and speakers deployed on a raspberry pi.
-                                </p>
-                            </>}
-                            buttonText="Vist GitHub Repo"
-                            image={piapp}
-                            click={() => window.open('https://github.com/BenStephens99/pi-app-v2', '_blank')}
-                        />
-                        
-                        <PortfolioCard
                             title="JTreat"
                             type="Website"
                             image={jtreat}
@@ -93,6 +80,20 @@ function Work() {
                         />
 
                         <PortfolioCard
+                            title="Home Device Controller"
+                            type="Personal Project"
+                            description={<>
+                                <p>Node.js Application to control home devices with asyncronous javascript fetch requests to
+                                    smart plugs and speakers deployed on a raspberry pi.
+                                </p>
+                            </>}
+                            buttonText="Vist GitHub Repo"
+                            image={piapp}
+                            click={() => window.open('https://github.com/BenStephens99/pi-app-v2', '_blank')}
+                        />
+
+
+                        <PortfolioCard
                             title="Cyber-Assure"
                             type="Website"
                             description={<p>A simple but clear, and responsive site for a cyber security company.</p>}
@@ -105,7 +106,8 @@ function Work() {
                             title="University Works"
                             type="Portfolio"
                             description={<>
-                                <p>A selection of work completed during my time at university.
+                                <p>A selection of work completed during my time at university including games built
+                                    with C#/Unity and C++/Unreal.
                                 </p>
                             </>}
                             buttonText="Vist University Portfolio"

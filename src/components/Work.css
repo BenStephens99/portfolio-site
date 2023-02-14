@@ -78,12 +78,16 @@
     box-shadow: 0 0 3px var(--fontColor);
     padding: 1em 2em;
     position: relative;
-    left: 400px;
+    left: -400px;
     background-color: inherit;
+    background-color: var(--backgroundColor);
+    animation-delay: 350ms;
+    z-index: 1;
 }
 
 .portfolio-card:nth-child(odd) {
-    left: -400px;
+    animation-delay: 0s;
+    z-index: 2;
 }
 
 .dark .portfolio-card {
@@ -123,35 +127,14 @@
     }
 }
 
-.portfolio-card.hidden {
-    animation-duration: 1ms;
-    animation-fill-mode: forwards;
-    animation-name: hide-portfolio-card;
-}
 
-@keyframes hide-portfolio-card {
-    from {
-        opacity: 1;
-    }
-
-    to {
-        opacity: 0;
-    }
-}
-
-
-
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1050px) {
 
     .portfolio-card.show {
         animation-duration: 400ms;
     }
 
     .portfolio-card {
-        left: 200px;
-    }
-
-    .portfolio-card:nth-child(odd) {
         left: -200px;
     }
 }
@@ -174,10 +157,12 @@
     .portfolio-card {
         left: 200px;
         padding-top: 2em;
+        animation-delay: 0s;
     }
 
     .portfolio-card:nth-child(odd) {
         left: -200px;
+        animation-delay: 0s;
     }
 
     .portfolio-card img {
