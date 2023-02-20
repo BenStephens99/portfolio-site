@@ -106,6 +106,10 @@ main {
   left: 50%;
   transform: translate(-50%);
   color: var(--fontColor);
+  will-change: width;
+  will-change: font-size;
+  will-change: transform;
+  will-change: top;
 }
 
 .dark {
@@ -260,26 +264,22 @@ main {
 @keyframes come-forward {
   0% {
     top: 4em;
-    left: calc(100vw * 1.5);
+    transform: translate(150%);
     width: 85%;
   }
 
   45% {
-    top: 4em;
-    left: 50%;
-    width: 85%;
+    transform: translate(-50%);
     font-size: 85%;
   }
 
   70% {
     top: 4em;
-    left: 50%;
     width: 85%;
     font-size: 85%;
   }
 
   100% {
-    left: 50%;
     font-size: 100%;
     top: 0;
     width: 100%;
@@ -291,20 +291,19 @@ main {
     top: 4em;
     width: 85%;
     font-size: 85%;
-    left: 50%;
   }
 
   50% {
     top: 4em;
     width: 85%;
+    transform: translate(-50%);
     font-size: 85%;
-    left: 50%;
   }
 
   100% {
     top: 4em;
     width: 85%;
-    left: -100%;
+    transform: translate(-200%);
     font-size: 85%;
     display: none;
   }

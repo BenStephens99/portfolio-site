@@ -55,18 +55,17 @@ function App() {
               <Header />
               <Aside />
             </MenuContext.Provider>
-          <div id='mainContainer'>
-            <Routes>
-              <Route path="/" element={<Home name="home" delay={delay} />}></Route>
-              <Route path='/work' element={<Work />}></ Route>
-              <Route path='work/energy-app' element={<EnergyApp />}></Route>
-              <Route path='/about' element={<About />}></Route>
-              <Route path='/contact' element={<Contact />}></Route>
-            </Routes>
-          </div>
+            <div id='mainContainer'>
+              <Routes>
+                <Route path="/" element={<Home name="home" delay={delay} />}></Route>
+                <Route path='/work' element={<Work />}></ Route>
+                <Route path='work/energy-app' element={<EnergyApp />}></Route>
+                <Route path='/about' element={<About />}></Route>
+                <Route path='/contact' element={<Contact />}></Route>
+              </Routes>
+            </div>
           </HomeDelay.Provider>
         </MainRefContext.Provider>
-
       </div>
     </ThemeContext.Provider>
   );
