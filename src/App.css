@@ -311,7 +311,7 @@ main {
 
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
   ::-webkit-scrollbar {
     width: 0px;
   }
@@ -335,9 +335,19 @@ main {
     transform: translate(-50%);
   }
 
+  /* Hide Border Mobile */
+  .box { 
+    width: calc(100% + 1px);
+    position: relative;
+    left: -1px;
+    top: -1px;
+  }
+
   .box-content {
     padding: 1.5em;
   }
+
+ 
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */

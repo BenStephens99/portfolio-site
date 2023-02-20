@@ -105,7 +105,7 @@ aside.open {
 }
 
 aside.closed {
-  width: 0px;
+  width: -1px;
   left: calc(-10px - var(--asideWidth));
 }
 
