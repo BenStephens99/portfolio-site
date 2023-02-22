@@ -7,6 +7,18 @@
     transform: translate(-50%);
 }
 
+.work.show-card {
+    animation-name: show-work;
+    animation-duration: 1000ms;
+}
+
+@keyframes show-work {
+    from {
+        opacity: 0;
+        transform: translate(-50%, 100%);
+    }
+}
+
 
 .work .text {
     width: 35em;
@@ -167,7 +179,7 @@
 }
 
 @media screen and (max-width: 650px) {
-    
+
 
     .work {
         position: relative;
@@ -193,7 +205,7 @@
         top: 0px;
         animation-delay: 0s;
     }
-    
+
     .portfolio-card:nth-child(3n+3) {
         top: 0px;
         animation-delay: 0s;

@@ -152,7 +152,7 @@ footer a {
   align-items: center;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
 
   #intro .title-large {
     font-size: 2.5em;
@@ -187,12 +187,8 @@ footer a {
 
 
   @keyframes slide-out-right {
-    from {
-      right: 0;
-    }
-  
     to {
-      right: -110vw;
+      transform: translate(100%);
     }
   }
   
@@ -238,11 +234,7 @@ footer a {
 
   @keyframes slide-in-right {
     from {
-      right: -100vw;
-    }
-
-    to {
-      right: 0;
+      transform: translate(100%);
     }
   }
 
@@ -263,12 +255,9 @@ footer a {
 
   @keyframes slide-from-bottom {
     from {
-      bottom: -60vh;
+      transform: translateY(100%);
     }
   
-    to {
-      bottom: 0;
-    }
   }
   
   @keyframes slide-out-bottom {

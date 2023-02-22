@@ -296,14 +296,14 @@ main {
   50% {
     top: 4em;
     width: 85%;
-    transform: translate(-50%);
+    transform: translateY(-50%);
     font-size: 85%;
   }
 
   100% {
     top: 4em;
     width: 85%;
-    transform: translate(-200%);
+    transform: translateY(-200%);
     font-size: 85%;
     display: none;
   }
@@ -340,7 +340,6 @@ main {
     width: calc(100% + 1px);
     position: relative;
     left: -1px;
-    top: -1px;
   }
 
   .box-content {
