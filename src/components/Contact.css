@@ -39,7 +39,8 @@ form fieldset {
 form input {
     width: 100%;
     font-size: inherit;
-    padding: 0.5em;
+    font-family: inherit;
+    padding: 1em;
     box-sizing: border-box;
     border: none;
     background-color: var(--backgroundColor);
@@ -59,9 +60,9 @@ form textarea {
     width: 100%;
     padding: none;
     font-size: inherit;
-    font: inherit;
+    font-family: inherit;
     box-sizing: border-box;
-    padding: 0.5em;
+    padding: 1em;
     border: none;
     background-color: var(--backgroundColor);
     color: var(--fontColor);
@@ -78,7 +79,6 @@ form button {
     margin: auto;
     padding: 1.5em 6em;
 }
-
 
 
 .linkedin-form {
