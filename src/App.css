@@ -296,14 +296,14 @@ main {
   50% {
     top: 4em;
     width: 85%;
-    transform: translateY(-50%);
+    transform: translateX(-50%);
     font-size: 85%;
   }
 
   100% {
     top: 4em;
     width: 85%;
-    transform: translateY(-200%);
+    transform: translateX(-200%);
     font-size: 85%;
     display: none;
   }

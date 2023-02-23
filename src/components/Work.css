@@ -176,6 +176,20 @@
     .portfolio-card {
         left: -200px;
     }
+
+    .portfolio-card:nth-child(3n+2) {
+        top: 0px;
+        animation-delay: 0s;
+    }
+
+    .portfolio-card:nth-child(3n+3) {
+        top: 0px;
+        animation-delay: 0s;
+    }
+
+    .portfolio-card:nth-child(even) {
+        top: 100px;
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -213,6 +227,11 @@
 
     .portfolio-card:nth-child(odd) {
         left: -200px;
+    }
+
+    
+    .portfolio-card:nth-child(even) {
+        top: 0px;
     }
 
 
