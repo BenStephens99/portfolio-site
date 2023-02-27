@@ -20,6 +20,11 @@ main.contact {
     min-height: 100%;
 }
 
+.dark .contact .box-content {
+  box-shadow: none;
+  border: 1px solid var(--fontColor);
+}
+
 form {
     width: 100%;
   }
