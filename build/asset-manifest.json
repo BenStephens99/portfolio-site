@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.eb439410.css",
-    "main.js": "/static/js/main.4d2e87e0.js",
+    "main.css": "/static/css/main.5c411ad4.css",
+    "main.js": "/static/js/main.27080c58.js",
     "static/media/NPCSystem.png": "/static/media/NPCSystem.21672ff34171cad8d353.png",
     "static/media/oldwebsite.png": "/static/media/oldwebsite.117ed3e37282b75d5a9c.png",
     "static/media/cyber-assure.png": "/static/media/cyber-assure.aeb761a0ac4ef893996d.png",
@@ -30,11 +30,11 @@
     "static/media/youtube.svg": "/static/media/youtube.7fe7276650e4cb9751334a6ae9801874.svg",
     "index.html": "/index.html",
     "static/media/arrow.svg": "/static/media/arrow.e7778361e2ecdfe959231e727077e5fd.svg",
-    "main.eb439410.css.map": "/static/css/main.eb439410.css.map",
-    "main.4d2e87e0.js.map": "/static/js/main.4d2e87e0.js.map"
+    "main.5c411ad4.css.map": "/static/css/main.5c411ad4.css.map",
+    "main.27080c58.js.map": "/static/js/main.27080c58.js.map"
   },
   "entrypoints": [
-    "static/css/main.eb439410.css",
-    "static/js/main.4d2e87e0.js"
+    "static/css/main.5c411ad4.css",
+    "static/js/main.27080c58.js"
   ]
 }
