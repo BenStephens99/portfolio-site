@@ -244,7 +244,7 @@ function Work() {
                             </>}
                             buttonText="View Website"
                             image={universityPortfolioImage}
-                            click={() => window.open('https://ben.stephens.uk.net/old/index.html', '_blank')}
+                            click={() => window.open('https://ben.stephens.uk.net/archive/2021/index.html', '_blank')}
                         />
 
 
