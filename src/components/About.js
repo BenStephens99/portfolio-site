@@ -52,7 +52,7 @@ function About() {
                             <Qualification
                                 title="Front-End Developer Professional Certificate"
                                 issuer="Meta"
-                                time="February 2023"
+                                time="2023"
                             />
 
                             <Qualification
