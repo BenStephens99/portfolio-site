@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.5c411ad4.css",
-    "main.js": "/static/js/main.27080c58.js",
+    "main.js": "/static/js/main.1be8ea34.js",
     "static/media/NPCSystem.png": "/static/media/NPCSystem.21672ff34171cad8d353.png",
     "static/media/oldwebsite.png": "/static/media/oldwebsite.117ed3e37282b75d5a9c.png",
     "static/media/cyber-assure.png": "/static/media/cyber-assure.aeb761a0ac4ef893996d.png",
@@ -31,10 +31,10 @@
     "index.html": "/index.html",
     "static/media/arrow.svg": "/static/media/arrow.e7778361e2ecdfe959231e727077e5fd.svg",
     "main.5c411ad4.css.map": "/static/css/main.5c411ad4.css.map",
-    "main.27080c58.js.map": "/static/js/main.27080c58.js.map"
+    "main.1be8ea34.js.map": "/static/js/main.1be8ea34.js.map"
   },
   "entrypoints": [
     "static/css/main.5c411ad4.css",
-    "static/js/main.27080c58.js"
+    "static/js/main.1be8ea34.js"
   ]
 }

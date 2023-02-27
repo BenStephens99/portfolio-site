@@ -52,13 +52,13 @@ function About() {
                             <Qualification
                                 title="Front-End Developer Professional Certificate"
                                 issuer="Meta"
-                                time="January 2023"
+                                time="February 2023"
                             />
 
                             <Qualification
                                 title="Computer Science for Games BSc Hons"
                                 issuer="University of Brighton"
-                                time="June 2022"
+                                time="2022"
                             />
 
 
